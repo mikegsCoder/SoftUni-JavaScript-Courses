@@ -5,6 +5,7 @@ body {
     margin: 0 auto;
     font-family: 'Raleway',sans-serif;
 }
+
 article{
     background: #34469c;;
     border-radius: 20px;
@@ -51,6 +52,7 @@ button:hover {
     background: #34469c;;
     border: 2px solid white;
 }
+
 #result {
     padding: 10px;
     margin: 10px;

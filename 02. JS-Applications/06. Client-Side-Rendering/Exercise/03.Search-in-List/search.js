@@ -14,10 +14,10 @@ searchBtn.addEventListener('click', search)
 
 function search(ev) {
     let searchText = document.getElementById('searchText').value.toLowerCase();
-    let allLi = document.querySelectorAll('#towns ul li');
+    let allLiElements = document.querySelectorAll('#towns ul li');
     let count = 0;
 
-    allLi.forEach(x => {
+    allLiElements.forEach(x => {
         if (x.textContent.toLowerCase().includes(searchText) && searchText !== '') {
             x.classList.add('active')
             count++;
