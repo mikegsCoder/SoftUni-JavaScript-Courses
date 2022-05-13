@@ -1,7 +1,6 @@
 import { html } from '../dom.js';
 import { getRecipeById, editRecipe } from '../api/data.js';
 
-
 const editTemplate = (recipe) => html`
 <section id="create">
     <article>

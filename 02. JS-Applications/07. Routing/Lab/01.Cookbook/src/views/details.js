@@ -2,7 +2,6 @@ import { html } from '../dom.js';
 import { getRecipeById, deleteRecipeById } from '../api/data.js';
 import { showComments } from './comments.js';
 
-
 const detailsTemplate = (recipe, isOwner, onDelete) => html`
 <section id="details">
     ${recipeCard(recipe, isOwner, onDelete)}
@@ -33,7 +32,6 @@ const recipeCard = (recipe, isOwner, onDelete) => html`
     </div>`
         : ''}
 </article>`;
-
 
 export function setupDetails() {
     return showDetails;

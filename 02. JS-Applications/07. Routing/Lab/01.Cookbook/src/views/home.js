@@ -1,7 +1,6 @@
 import { html } from '../dom.js';
 import { getRecent } from '../api/data.js';
 
-
 const homeTemplate = (recentRecipes) => html`
 <section id="home">
     <div class="hero">
