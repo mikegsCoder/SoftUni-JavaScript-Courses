@@ -10,7 +10,6 @@ import { onLogin, setupLogin } from './views/login.js';
 import { setupMyFurnitures } from './views/myFurnitures.js';
 import { setupRegister, onRegister } from './views/register.js';
 
-
 const main = document.getElementById('main');
 const navBar = document.getElementById('navbar');
 const navigator = createNav(main, navBar);
