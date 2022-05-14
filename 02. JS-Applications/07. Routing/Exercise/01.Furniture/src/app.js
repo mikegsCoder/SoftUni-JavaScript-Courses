@@ -3,7 +3,7 @@ import api from './api/api.js';
 
 import { createNav } from './navigator.js'
 import { setupCreate, onCreate } from './views/create.js';
-import { setupDetails,deleteF } from './views/details.js';
+import { setupDetails, deleteF } from './views/details.js';
 import { setupEdit, onEdit } from './views/edit.js';
 import { setupHome } from './views/home.js';
 import { onLogin, setupLogin } from './views/login.js';
@@ -23,7 +23,7 @@ const views = {
     createView: navigator.registerView('create', setupCreate, 'createLink'),
     detailsView: navigator.registerView('details', setupDetails),
     editView: navigator.registerView('edit', setupEdit),
-    myFuView: navigator.registerView('myFurnitures',setupMyFurnitures,'profileLink'),
+    myFuView: navigator.registerView('myFurnitures', setupMyFurnitures, 'profileLink'),
 }
 
 page('/', views.homeView);
