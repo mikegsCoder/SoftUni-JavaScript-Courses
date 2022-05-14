@@ -1,6 +1,6 @@
 // ---> OPEN VS CODE FROM 01.FURNITURE FOLDER !!! <----
 
-import dom, { render} from './dom.js'
+import dom, { render } from './dom.js'
 
 export function createNav(main, navbar) {
     const views = {};
@@ -17,7 +17,6 @@ export function createNav(main, navbar) {
     }
 
     return navigator;
-
 
     function registerView(name, setup, navId) {
         const execute = setup();
@@ -61,6 +60,7 @@ export function createNav(main, navbar) {
 
     function onSubmit(ev) {
         const { handler, onSuccess } = forms[ev.target.id];
+        
         if (typeof (handler) === 'function') {
             ev.preventDefault();
             const formData = new FormData(ev.target);
@@ -68,5 +68,4 @@ export function createNav(main, navbar) {
             handler(body, onSuccess)
         }
     }
-
 }
