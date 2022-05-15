@@ -1,7 +1,6 @@
 import { html } from '../dom.js';
 import { createRecipe } from '../api/data.js';
 
-
 const createTemplate = () => html`
 <section id="create">
     <article>

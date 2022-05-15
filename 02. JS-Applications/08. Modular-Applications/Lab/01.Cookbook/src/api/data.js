@@ -22,6 +22,7 @@ export async function getRecipes(page = 1, search) {
     if (search) {
         url += '&where=' + encodeURIComponent(`name like "${search}"`);
     }
+
     return await api.get(url);
 }
 
@@ -30,6 +31,7 @@ export async function getRecipeCount(search) {
     if (search) {
         url += '&where=' + encodeURIComponent(`name like "${search}"`);
     }
+    
     return await api.get(endpoints.RECIPE_COUNT);
 }
 

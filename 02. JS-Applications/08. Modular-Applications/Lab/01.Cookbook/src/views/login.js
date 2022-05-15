@@ -1,7 +1,6 @@
 import { html } from '../dom.js';
 import { login } from '../api/data.js';
 
-
 const loginTemplate = () => html`
 <section id="login">
     <article>
@@ -13,7 +12,6 @@ const loginTemplate = () => html`
         </form>
     </article>
 </section>`;
-
 
 export function setupLogin() {
     return showLogin;

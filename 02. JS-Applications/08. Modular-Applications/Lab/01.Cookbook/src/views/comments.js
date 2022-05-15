@@ -1,7 +1,6 @@
 import { render, html, until } from '../dom.js';
 import { getCommentsByRecipeId, createComment } from '../api/data.js';
 
-
 const commentsTemplate = (recipe, commentForm, comments) => html`
 <div class="section-title">
     Comments for ${recipe.name}

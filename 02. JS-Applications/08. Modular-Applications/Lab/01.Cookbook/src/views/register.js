@@ -1,7 +1,6 @@
 import { html } from '../dom.js';
 import { regster } from '../api/data.js';
 
-
 const registerTemplate = () => html`
 <section id="register">
     <article>
@@ -14,7 +13,6 @@ const registerTemplate = () => html`
         </form>
     </article>
 </section>`;
-
 
 export function setupRegister() {
     return showRegister;
