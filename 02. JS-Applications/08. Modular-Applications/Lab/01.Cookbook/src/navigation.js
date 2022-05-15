@@ -1,6 +1,5 @@
 import { render } from './dom.js';
 
-
 export function createNav(main, navbar) {
     const views = {};
     const links = {};
@@ -65,4 +64,3 @@ export function createNav(main, navbar) {
         }
     }
 }
-

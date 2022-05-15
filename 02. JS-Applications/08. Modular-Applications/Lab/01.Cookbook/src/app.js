@@ -56,7 +56,6 @@ window.addEventListener('load', async () => {
     // Start application
     page();
 
-
     async function logout() {
         try {
             await apiLogout();
