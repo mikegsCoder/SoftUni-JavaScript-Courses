@@ -1,7 +1,6 @@
 import api from "../api/api.js";
 import { getElementById, html, setUserData } from "../dom.js"
 
-
 const registerTemplate = () => html`
 <section id="register">
     <article class="narrow">
@@ -19,9 +18,7 @@ const registerTemplate = () => html`
         <footer class="pad-small">Already have an account? <a href="/login" class="invert">Sign in here</a>
         </footer>
     </article>
-</section>
-`
-
+</section>`
 
 export function setupRegister() {
     return showRegister;
@@ -30,7 +27,6 @@ export function setupRegister() {
         return registerTemplate();
     }
 }
-
 
 export async function onRegister(data, onSuccess) {
     try {
@@ -58,5 +54,4 @@ export async function onRegister(data, onSuccess) {
         errDiv.textContent = err.message;
         errDiv.style.display = 'block';
     }
-
 }

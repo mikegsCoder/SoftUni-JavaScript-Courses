@@ -1,24 +1,22 @@
 import { html, getElementById } from "../dom.js"
 import api from "../api/api.js"
 
-
 const editTemplate = (team) => html`
-    <section id="edit">
-        <article class="narrow">
-            <header class="pad-med">
-                <h1>Edit Team</h1>
-            </header>
-            <form id="edit-form" class="main-form pad-large">
-                <input type="hidden" name="teamId" .value=${team._id} />
-                <div class="error" id="error" style="display: none">Error message.</div>
-                <label>Team name: <input type="text" name="name" .value=${team.name}></label>
-                <label>Logo URL: <input type="text" name="logoUrl" .value=${team.logoUrl}></label>
-                <label>Description: <textarea name="description" .value=${team.description}></textarea></label>
-                <input class="action cta" type="submit" value="Save Changes">
-            </form>
-        </article>
-    </section>
-`
+<section id="edit">
+    <article class="narrow">
+        <header class="pad-med">
+            <h1>Edit Team</h1>
+        </header>
+        <form id="edit-form" class="main-form pad-large">
+            <input type="hidden" name="teamId" .value=${team._id} />
+            <div class="error" id="error" style="display: none">Error message.</div>
+            <label>Team name: <input type="text" name="name" .value=${team.name}></label>
+            <label>Logo URL: <input type="text" name="logoUrl" .value=${team.logoUrl}></label>
+            <label>Description: <textarea name="description" .value=${team.description}></textarea></label>
+            <input class="action cta" type="submit" value="Save Changes">
+        </form>
+    </article>
+</section>`
 
 export function setupEdit() {
     return showEdit;

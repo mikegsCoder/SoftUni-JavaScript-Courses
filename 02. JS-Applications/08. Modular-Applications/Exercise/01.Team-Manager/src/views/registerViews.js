@@ -1,14 +1,10 @@
 import { html } from "../dom.js"
 
+const name = () => html``
 
-const name = () => html`
-    
-`
+function name() {
 
-
-function name(){
-
-    function name(context){
-        return 
+    function name(context) {
+        return
     }
 }
