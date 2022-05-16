@@ -11,9 +11,6 @@ import { setupDetails, onJoin, onApprove, onRemove } from "./views/detailsView.j
 import { onEdit, setupEdit } from "./views/editView.js";
 import { setupMyTeams } from "./views/myTeamsView.js";
 
-
-
-
 const main = document.getElementById('main');
 const navBar = document.getElementById('navBar');
 
@@ -54,7 +51,6 @@ page('/approve/:memberId', onApprove);
 page('/remove/:memberId', onRemove);
 
 page.start();
-
 
 async function logout() {
     await api.logout();

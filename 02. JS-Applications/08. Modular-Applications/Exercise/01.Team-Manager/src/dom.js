@@ -1,10 +1,10 @@
 import { render, html } from '../node_modules/lit-html/lit-html.js'
 
 function setUserData(userData) {
-    sessionStorage.setItem('token',userData.accessToken);
-    sessionStorage.setItem('email',userData.email);
-    sessionStorage.setItem('username',userData.username);
-    sessionStorage.setItem('userId',userData._id);
+    sessionStorage.setItem('token', userData.accessToken);
+    sessionStorage.setItem('email', userData.email);
+    sessionStorage.setItem('username', userData.username);
+    sessionStorage.setItem('userId', userData._id);
 }
 
 function removeUserData() {
@@ -25,5 +25,3 @@ export {
     removeUserData,
     getElementById,
 }
-
-

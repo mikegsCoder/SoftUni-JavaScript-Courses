@@ -1,6 +1,5 @@
 import { render } from './dom.js'
 
-
 export function createNavigator(navBar, main) {
     const views = {};
     const forms = {};
