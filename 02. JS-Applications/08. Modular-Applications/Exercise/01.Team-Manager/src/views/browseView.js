@@ -1,22 +1,19 @@
 import api from "../api/api.js";
 import { html } from "../dom.js"
 
-
 const browseTemplate = (teams, isAuth) => html`
-    <section id="browse">
-        <article class="pad-med">
-            <h1>Team Browser</h1>
-        </article>
-        ${isAuth ? createButtonTemplate() : ''}
-        ${teams.map(teamTemplate)}
-    </section>
-`
+<section id="browse">
+    <article class="pad-med">
+        <h1>Team Browser</h1>
+    </article>
+    ${isAuth ? createButtonTemplate() : ''}
+    ${teams.map(teamTemplate)}
+</section>`
 
 const createButtonTemplate = () => html`
-    <article class="layout narrow">
-        <div class="pad-small"><a href="/create" class="action cta">Create Team</a></div>
-    </article>
-`
+<article class="layout narrow">
+    <div class="pad-small"><a href="/create" class="action cta">Create Team</a></div>
+</article>`
 
 const teamTemplate = (team) => html`
 <article class="layout">
@@ -27,8 +24,7 @@ const teamTemplate = (team) => html`
         <span class="details">${team.members.length} Members</span>
         <div><a href="/details/${team._id}" class="action">See details</a></div>
     </div>
-</article>
-`
+</article>`
 
 export function setupBrowse() {
     return showBrowse;
@@ -37,7 +33,7 @@ export function setupBrowse() {
         const isAuth = sessionStorage.getItem('token') !== null;
         const teams = await api.getAllTeams();
         const members = await api.getAllMembers();
-        
+
         teams.forEach(t => {
             const teamMembers = members.filter(x => x.teamId == t._id)
             t.members = teamMembers;

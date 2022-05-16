@@ -1,54 +1,51 @@
 import { html } from "../dom.js"
 import api from '../api/api.js'
 
-
 const detailsTemplate = (team, members, pendingMembers ,auth,currentMember) => html`
-    <section id="team-home">
-        <article class="layout">
-            <img src="${team.logoUrl}" class="team-logo left-col">
-            <div class="tm-preview">
-                <h2>${team.name}</h2>
-                <p>${team.description}</p>
-                <span class="details">${members.length} Members</span>
-                <div>
-                    ${auth.isOwner ? html`<a href="/edit/${team._id}" class="action">Edit team</a>` : ''}
-                    ${auth.isUser ? html`<a href="/join-team/${team._id}" class="action">Join team</a>` : ''}
-                    ${auth.isMember ? html`<a href="/remove/${currentMember._id}" class="action invert">Leave team</a>` : ''}
-                    ${auth.isPending ? html`Membership pending. <a href="/remove/${currentMember._id}">Cancel request</a>` : ''}
-                </div>
+<section id="team-home">
+    <article class="layout">
+        <img src="${team.logoUrl}" class="team-logo left-col">
+        <div class="tm-preview">
+            <h2>${team.name}</h2>
+            <p>${team.description}</p>
+            <span class="details">${members.length} Members</span>
+            <div>
+                ${auth.isOwner ? html`<a href="/edit/${team._id}" class="action">Edit team</a>` : ''}
+                ${auth.isUser ? html`<a href="/join-team/${team._id}" class="action">Join team</a>` : ''}
+                ${auth.isMember ? html`<a href="/remove/${currentMember._id}" class="action invert">Leave team</a>` : ''}
+                ${auth.isPending ? html`Membership pending. <a href="/remove/${currentMember._id}">Cancel request</a>` : ''}
+            </div>
+            <div class="pad-large">
+                <h3>Members</h3>
+                <ul class="tm-members">
+                    ${members.map(x => memberLiTemplate(x, auth))}
+                </ul>
+            </div>
+            ${auth.isOwner 
+                ? html`
                 <div class="pad-large">
-                    <h3>Members</h3>
+                    <h3>Membership Requests</h3>
                     <ul class="tm-members">
-                        ${members.map(x => memberLiTemplate(x, auth))}
+                        ${pendingMembers.map(pendingTemplate)}
                     </ul>
-                </div>
-                ${auth.isOwner ? html`
-                    <div class="pad-large">
-                        <h3>Membership Requests</h3>
-                        <ul class="tm-members">
-                            ${pendingMembers.map(pendingTemplate)}
-                        </ul>
-                    </div>
-                ` : ''}
-        </article>
-    </section>
-`
+                </div>` 
+                : ''}
+    </article>
+</section>`
 
 const memberLiTemplate = (member, auth) => html`
-    <li>
-        ${member.user.username}${auth.isOwner && member._ownerId !== sessionStorage.getItem('userId') 
+<li>
+    ${member.user.username}${auth.isOwner && member._ownerId !== sessionStorage.getItem('userId') 
         ? html`<a href="/remove/${member._id}" class="tm-control action">Remove from team</a>` 
         : ''}
-    </li>
-`
+</li>`
 
 const pendingTemplate = (member) => html`
-    <li>
-        ${member.user.username}
-        <a href="/approve/${member._id}" class="tm-control action">Approve</a>
-        <a href="/remove/${member._id}" class="tm-control action">Decline</a>
-    </li>
-`
+<li>
+    ${member.user.username}
+    <a href="/approve/${member._id}" class="tm-control action">Approve</a>
+    <a href="/remove/${member._id}" class="tm-control action">Decline</a>
+</li>`
 
 let currentTeamId;
 
