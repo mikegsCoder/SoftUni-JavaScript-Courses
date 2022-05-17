@@ -14,7 +14,6 @@ import { profilePage } from './views/profile.js';
 // import * as api from './api/data.js';
 // window.api = api;
 
-// const root = document.getElementById('content');
 const root = document.querySelector('main');
 document.getElementById('logoutBtn').addEventListener('click', onLogout);
 
@@ -46,7 +45,6 @@ function updateUserNav() {
         document.querySelector('.user').style.display = 'block';
         document.querySelector('.guest').style.display = 'none';
         document.getElementById('welcomeMsg').textContent = `Welcome, ${userData.email}`;
-        //document.querySelector('#user span').textContent = `Welcome, ${userData.email}`;
     } else {
         document.querySelector('.user').style.display = 'none';
         document.querySelector('.guest').style.display = 'block';
