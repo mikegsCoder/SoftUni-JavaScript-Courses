@@ -8,9 +8,8 @@ import { createPage } from './views/create.js';
 import { detailsPage } from './views/details.js';
 import { editPage } from './views/edit.js';
 import { profilePage } from './views/profile.js';
-// import { myBooksPage } from './views/catalog.js';
 
-//console.log('it works');
+// console.log('it works');
 // import * as api from './api/data.js';
 // window.api = api;
 
@@ -19,7 +18,7 @@ document.getElementById('logoutBtn').addEventListener('click', onLogout);
 
 page(decorateContext);
 
-//page('/', () => console.log('home page'));
+// page('/', () => console.log('home page'));
 
 page('/', homePage);
 page('/login', loginPage);
@@ -28,7 +27,6 @@ page('/create', createPage);
 page('/details/:id', detailsPage);
 page('/edit/:id', editPage);
 page('/profile', profilePage);
-// page('/catalog', myBooksPage);
 
 updateUserNav();
 page.start();

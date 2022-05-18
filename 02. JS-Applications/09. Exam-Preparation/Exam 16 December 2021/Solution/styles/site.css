@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
 html {
-    font-family:Verdana,Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 16px;
     box-sizing: border-box;
     background: url(../images/background.jpg) rgba(7, 1, 31, 0.473);
@@ -13,7 +14,9 @@ body {
     height: 100vh;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
@@ -40,23 +43,26 @@ nav ul li {
     margin: 0 0.5em;
 }
 
-
-nav a, footer, footer a {
+nav a,
+footer,
+footer a {
     text-decoration: none;
     border-radius: 0.5em;
     padding: 0.5em;
-    color: rgba(245, 234, 234, 0.842);;
+    color: rgba(245, 234, 234, 0.842);
+    ;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-nav a:hover, footer a:hover {
+nav a:hover,
+footer a:hover {
     background-color: rgba(99, 99, 99, 0.466);
 }
 
 footer {
-    position:fixed;
-    bottom:0;
+    position: fixed;
+    bottom: 0;
     font-size: 12px;
 }
 
@@ -105,9 +111,7 @@ form button.btn {
     margin: 1em 1em;
     padding: 0.5rem;
     border: none;
-    /* border: 2px solid black; */
     border-radius: 0.5em;
-    /* background-color: rgba(0, 0, 0, 0.541); */
     font-size: 1.2rem;
     box-sizing: 2px 2px 2px black;
 }
@@ -115,14 +119,14 @@ form button.btn {
 form button:hover {
     cursor: pointer;
     background-color: rgba(0, 128, 0, 0.562);
-    /* font-weight: bold; */
 }
 
-form > p {
+form>p {
     text-align: center;
 }
 
-.btn-details, .btn{
+.btn-details,
+.btn {
     /* border: 2px solid black; */
     border-radius: 0.3em;
     padding: 0.1em 0.3em;

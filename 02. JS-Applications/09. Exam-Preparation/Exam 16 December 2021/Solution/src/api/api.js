@@ -87,12 +87,6 @@ export async function register(email, password) {
     });
 };
 
-// export async function logout() {
-//     await request('/users/logout', createOptions());
-
-//     clearUserData();
-// };
-
 export async function logout() {
     get('/users/logout');
     clearUserData();

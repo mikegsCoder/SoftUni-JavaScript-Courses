@@ -2,8 +2,6 @@ import { html, nothing } from '../lib.js';
 import { deleteItem, getItemById, getMyLikeByItemId, likeItem, getLikesByItemId } from '../api/data.js';
 import { getUserData } from '../util.js';
 
-
-
 const detailsTemplate = (theater, isOwner, onDelete, likes, showLikeButton, onLike) => html`
 <section id="detailsPage">
     <div id="detailsBox">
@@ -23,39 +21,19 @@ const detailsTemplate = (theater, isOwner, onDelete, likes, showLikeButton, onLi
 
                 ${theaterControlTemplate(theater, isOwner, onDelete)}
 
-                <!-- <a class="btn-delete" href="#">Delete</a>
-                <a class="btn-edit" href="#">Edit</a> -->
-
                 ${likeControlTemplate(showLikeButton, onLike)}
 
-                <!-- <a class="btn-like" href="#">Like</a> -->
             </div>
             <p class="likes">Likes: ${likes}</p>
         </div>
     </div>
 </section>`;
 
-// const petControlsTemplate = (pet, isOwner, onDelete) => {
-//     if (isOwner) {
-//         return html`
-//             <a class="button" href="/edit/${pet._id}">Edit</a>
-//             <a @click=${onDelete} class="button" href="javascript:void(0)">Delete</a>`
-
-//         // <a @click=${onDelete} class="btn-delete" href="javascript:void(0)">Delete</a>
-//         // <a class="btn-edit" href="/edit/${theater._id}">Edit</a>`;
-//     } else {
-//         return null;
-//     }
-// };
-
 const theaterControlTemplate = (theater, isOwner, onDelete) => {
     if (isOwner) {
         return html`
             <a @click=${onDelete} class="btn-delete" href="javascript:void(0)">Delete</a>
             <a class="btn-edit" href="/edit/${theater._id}">Edit</a>`
-
-        // <a @click=${onDelete} class="btn-delete" href="javascript:void(0)">Delete</a>
-        // <a class="btn-edit" href="/edit/${theater._id}">Edit</a>`;
     } else {
         return nothing;
     }
@@ -64,7 +42,6 @@ const theaterControlTemplate = (theater, isOwner, onDelete) => {
 const likeControlTemplate = (showLikeButton, onLike) => {
     if (showLikeButton) {
         return html`<a @click=${onLike} class="btn-like" href="javascript:void(0)">Like</a>`;
-        // return html`<a @click=${onLike} class="btn-like" href="javascript:void(0)">Like</a>`;
     } else {
         return nothing;
     }

@@ -1,8 +1,6 @@
 import { html } from '../lib.js';
 import { editItem, getItemById } from '../api/data.js';
 
-
-
 const editTemplate = (theater, onSubmit) => html`
 <section id="editPage">
     <form @submit=${onSubmit} class="theater-form">
@@ -35,7 +33,6 @@ const editTemplate = (theater, onSubmit) => html`
 
 export async function editPage(ctx) {
     const theater = await getItemById(ctx.params.id);
-    //console.log(theater);
     ctx.render(editTemplate(theater, onSubmit));
 
     async function onSubmit(event) {
@@ -48,7 +45,6 @@ export async function editPage(ctx) {
         const description = formData.get('description').trim();
         const imageUrl = formData.get('imageUrl').trim();
 
-        //if( formData.values().some(x => x == ''))
         if (title == '' || date == '' || author == '' || description == '' || imageUrl == '') {
             return alert('All fields are required!');
         }
