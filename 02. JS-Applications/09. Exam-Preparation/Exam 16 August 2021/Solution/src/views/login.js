@@ -1,7 +1,6 @@
 import { html } from '../lib.js';
 import { login } from '../api/data.js';
 
-
 const loginTemplate = (onSubmit) => html`
 <section id="login-page" class="auth">
     <form @submit=${onSubmit} id="login">

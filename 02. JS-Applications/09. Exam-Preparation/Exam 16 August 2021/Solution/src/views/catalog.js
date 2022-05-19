@@ -11,7 +11,6 @@ const catalogTemplate = (games) => html`
 
 </section>`;
 
-
 const gamePreview = (game) => html`
 <div class="allGames">
     <div class="allGames-info">

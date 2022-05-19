@@ -2,7 +2,6 @@ import { html, nothing } from '../lib.js';
 import { deleteItem, getItemById, getCommentsByItemId, commentItem } from '../api/data.js';
 import { getUserData } from '../util.js';
 
-
 const detailsTemplate = (game, isOwner, onDelete, comments, hasUser, onComment) => html`
 <section id="game-details">
     <h1>Game Details</h1>
@@ -19,11 +18,9 @@ const detailsTemplate = (game, isOwner, onDelete, comments, hasUser, onComment) 
 
         <div class="details-comments">
             <h2>Comments:</h2>
-
                 ${comments.length == 0
                 ? html`<p class="no-comment">No comments.</p>`
                 : html`<ul>${comments.map(commentPreview)}</ul>`}
-
         </div>
 
         ${gameControlTemplate(game, isOwner, onDelete)}

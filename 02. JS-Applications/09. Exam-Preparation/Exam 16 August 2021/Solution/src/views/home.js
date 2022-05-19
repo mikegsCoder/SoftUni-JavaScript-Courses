@@ -1,7 +1,6 @@
 import { html, nothing } from '../lib.js';
 import { getLatestItems } from '../api/data.js';
 
-
 const homeTemplate = (books) => html`
 <section id="welcome-world">
 
@@ -15,8 +14,8 @@ const homeTemplate = (books) => html`
         <h1>Latest Games</h1>
 
         ${books.length == 0
-        ? html`<p class="no-articles">No games yet</p>`
-        : books.map(gamePreview)}
+            ? html`<p class="no-articles">No games yet</p>`
+            : books.map(gamePreview)}
 
     </div>
 </section>`;
@@ -38,6 +37,6 @@ const gamePreview = (game) => html`
 
 export async function homePage(ctx) {
     const books = await getLatestItems();
-    //console.log(books);
+    
     ctx.render(homeTemplate(books));
 }

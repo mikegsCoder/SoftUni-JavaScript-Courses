@@ -1,7 +1,6 @@
 import { html } from '../lib.js';
 import { createItem } from '../api/data.js';
 
-
 const createTemplate = (onSubmit) => html`
 <section id="create-page" class="auth">
     <form @submit=${onSubmit} id="create">

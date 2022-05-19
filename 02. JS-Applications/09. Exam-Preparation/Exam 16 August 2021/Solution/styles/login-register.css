@@ -69,8 +69,9 @@ label:nth-of-type(2) {
 
 input::placeholder {
     color: rgba(184, 179, 179, 0.678);
-};
+}
 
+;
 
 label[for="female"] {
     margin-top: 10px;

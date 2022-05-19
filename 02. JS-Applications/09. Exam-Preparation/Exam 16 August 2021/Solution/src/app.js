@@ -9,7 +9,7 @@ import { createPage } from './views/create.js';
 import { detailsPage } from './views/details.js';
 import { editPage } from './views/edit.js';
 
-//console.log('it works');
+// console.log('it works');
 // import * as api from './api/data.js';
 // window.api = api;
 
@@ -18,7 +18,7 @@ document.getElementById('logoutBtn').addEventListener('click', onLogout);
 
 page(decorateContext);
 
-//page('/', () => console.log('home page'));
+// page('/', () => console.log('home page'));
 
 page('/', homePage);
 page('/login', loginPage);
@@ -42,8 +42,6 @@ function updateUserNav() {
     if (userData) {
         document.getElementById('user').style.display = 'inline-block';
         document.getElementById('guest').style.display = 'none';
-        // document.getElementById('welcomeMsg').textContent = `Welcome, ${userData.email}`;
-        //document.querySelector('#user span').textContent = `Welcome, ${userData.email}`;
     } else {
         document.getElementById('user').style.display = 'none';
         document.getElementById('guest').style.display = 'inline-block';
