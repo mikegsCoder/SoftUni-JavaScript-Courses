@@ -1,6 +1,5 @@
-import { html, nothing } from '../lib.js';
+import { html } from '../lib.js';
 import { getCarById, editCar } from '../api/data.js';
-
 
 const editTemplate = (car, onSubmit) => html`
 <section id="edit-listing">
@@ -50,7 +49,6 @@ export async function editPage(ctx) {
         const imageUrl = formData.get('imageUrl').trim();
         let price = formData.get('price').trim();
 
-        //if( formData.values().some(x => x == ''))
         if (brand == '' || model == '' || description == '' || year == ''
             || imageUrl == '' || price == '') {
             return alert('All fields are required!');

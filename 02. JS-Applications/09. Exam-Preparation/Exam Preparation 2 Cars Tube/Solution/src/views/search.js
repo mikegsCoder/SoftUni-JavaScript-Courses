@@ -1,8 +1,5 @@
-import { html, nothing } from '../lib.js';
+import { html } from '../lib.js';
 import { search } from '../api/data.js';
-import { getUserData } from '../util.js';
-
-
 
 const searchTemplate = (cars, onSearch) => html`
 <section id="search-cars">
@@ -15,11 +12,9 @@ const searchTemplate = (cars, onSearch) => html`
 
     <h2>Results:</h2>
     <div class="listings">
-
         ${cars.length == 0
-        ? html`<p class="no-cars"> No results.</p>`
-        : cars.map(carPreview)}
-
+            ? html`<p class="no-cars"> No results.</p>`
+            : cars.map(carPreview)}
     </div>
 </section>`;
 
@@ -42,8 +37,6 @@ const carPreview = (car) => html`
 </div>`;
 
 export async function searchPage(ctx) {
-    //console.log('in search');
-
     let cars = [];
     ctx.render(searchTemplate(cars, onSearch));
 

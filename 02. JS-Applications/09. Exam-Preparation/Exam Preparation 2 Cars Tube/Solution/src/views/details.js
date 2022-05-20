@@ -2,8 +2,6 @@ import { html, nothing } from '../lib.js';
 import { deleteCar, getCarById } from '../api/data.js';
 import { getUserData } from '../util.js';
 
-
-
 const detailsTemplate = (car, isOwner, onDelete) => html`
 <section id="listing-details">
     <h1>Details</h1>
@@ -16,14 +14,8 @@ const detailsTemplate = (car, isOwner, onDelete) => html`
             <li><span>Year:</span>${car.year}</li>
             <li><span>Price:</span>${car.price}$</li>
         </ul>
-
         <p class="description-para">${car.description}</p>
-
         ${carControlsTemplate(car, isOwner, onDelete)}
-        <!-- <div class="listings-buttons">
-            <a href="#" class="button-list">Edit</a>
-            <a href="#" class="button-list">Delete</a>
-        </div> -->
     </div>
 </section>`;
 
@@ -34,9 +26,6 @@ const carControlsTemplate = (car, isOwner, onDelete) => {
                 <a href="/edit/${car._id}" class="button-list">Edit</a>
                 <a @click=${onDelete} href="javascript:void(0)" class="button-list">Delete</a>
             </div>`
-
-       
-
     } else {
         return nothing;
     }
@@ -45,9 +34,7 @@ const carControlsTemplate = (car, isOwner, onDelete) => {
 export async function detailsPage(ctx) {
 
     const userData = getUserData();
-
     const car = await getCarById(ctx.params.id);
-
     const isOwner = userData && userData.id == car._ownerId;
 
     ctx.render(detailsTemplate(car, isOwner, onDelete));

@@ -1,6 +1,5 @@
-import { html, nothing } from '../lib.js';
+import { html } from '../lib.js';
 import { login } from '../api/data.js';
-
 
 const loginTemplate = (onSubmit) => html`
 <section id="login">
@@ -38,7 +37,6 @@ export function loginPage(ctx) {
         if (username == '' || password == '') {
             return alert('Please fill all fields!');
         }
-
 
         await login(username, password);
         ctx.updateUserNav();

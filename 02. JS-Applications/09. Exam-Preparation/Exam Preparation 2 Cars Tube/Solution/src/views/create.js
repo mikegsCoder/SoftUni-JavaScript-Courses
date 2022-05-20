@@ -1,7 +1,5 @@
-import { html, nothing } from '../lib.js';
+import { html } from '../lib.js';
 import { createCar } from '../api/data.js';
-
-
 
 const createTemplate = (onSubmit) => html`
 <section id="create-listing">
@@ -49,7 +47,6 @@ export function createPage(ctx) {
         const imageUrl = formData.get('imageUrl').trim();
         let price = formData.get('price').trim();
 
-        //if( formData.values().some(x => x == ''))
         if (brand == '' || model == '' || description == '' || year == ''
             || imageUrl == '' || price == '') {
             return alert('All fields are required!');
@@ -61,8 +58,6 @@ export function createPage(ctx) {
         if (year <= 0 || price <= 0) {
             return alert('Please enter a valid price and year!')
         }
-
-       
 
         await createCar({
             brand,

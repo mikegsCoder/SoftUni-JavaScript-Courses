@@ -6,6 +6,7 @@
 .listing-props>li {
     font-size: 20px;
 }
+
 .listing-props>li>span {
     font-weight: 600;
     display: inline-block;

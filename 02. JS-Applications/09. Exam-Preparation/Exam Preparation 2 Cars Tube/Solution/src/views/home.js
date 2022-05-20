@@ -1,5 +1,4 @@
-import { html, nothing } from '../lib.js';
-
+import { html } from '../lib.js';
 
 const homeTemplate = () => html`
 <section id="main">
@@ -13,9 +12,7 @@ const homeTemplate = () => html`
     </div>
 </section>`;
 
-
-
 export async function homePage(ctx) {
-  
+
     ctx.render(homeTemplate());
 }
