@@ -1,8 +1,6 @@
 import { html } from '../lib.js';
 import { createBook } from '../api/data.js';
 
-
-
 const createTemplate = (onSubmit) => html`
 <section id="create-page" class="create">
     <form @submit=${onSubmit} id="create-form" action="" method="">
@@ -55,7 +53,6 @@ export function createPage(ctx) {
         const imageUrl = formData.get('imageUrl').trim();
         const type = formData.get('type').trim();
 
-        //if( formData.values().some(x => x == ''))
         if (title == '' || description == '' || type == '' || imageUrl == '') {
             return alert('All fields are required!');
         }
@@ -64,7 +61,7 @@ export function createPage(ctx) {
             title,
             description,
             imageUrl,
-            type          
+            type
         });
 
         ctx.page.redirect('/');

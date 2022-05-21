@@ -1,7 +1,5 @@
-import { html, nothing } from '../lib.js';
+import { html } from '../lib.js';
 import { editBook, getBookById } from '../api/data.js';
-
-
 
 const editTemplate = (book, onSubmit) => html`
 <section id="edit-page" class="edit">
@@ -17,8 +15,7 @@ const editTemplate = (book, onSubmit) => html`
             <p class="field">
                 <label for="description">Description</label>
                 <span class="input">
-                    <textarea name="description"
-                        id="description">${book.description}</textarea>
+                    <textarea name="description" id="description">${book.description}</textarea>
                 </span>
             </p>
             <p class="field">
@@ -57,7 +54,6 @@ export async function editPage(ctx) {
         const imageUrl = formData.get('imageUrl').trim();
         const type = formData.get('type').trim();
 
-        //if( formData.values().some(x => x == ''))
         if (title == '' || description == '' || type == '' || imageUrl == '') {
             return alert('All fields are required!');
         }

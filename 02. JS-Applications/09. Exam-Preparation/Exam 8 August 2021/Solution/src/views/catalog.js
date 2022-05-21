@@ -1,8 +1,6 @@
-import { html, nothing } from '../lib.js';
+import { html } from '../lib.js';
 import { getMyBooks } from '../api/data.js';
 import { getUserData } from '../util.js';
-
-
 
 const myPetsTemplate = (books) => html`
 <section id="my-books-page" class="my-books">
@@ -13,8 +11,6 @@ const myPetsTemplate = (books) => html`
         : html`<ul class="my-books-list">${books.map(bookPreview)}</ul>`}
 
 </section>`;
-
-
 
 const bookPreview = (book) => html`
 <li class="otherBooks">
@@ -27,6 +23,6 @@ const bookPreview = (book) => html`
 export async function myBooksPage(ctx) {
     const userData = getUserData();
     const books = await getMyBooks(userData.id);
-    //console.log(userData);
+
     ctx.render(myPetsTemplate(books));
 }
