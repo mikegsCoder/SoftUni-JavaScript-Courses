@@ -1,7 +1,5 @@
-import { html, nothing } from '../lib.js';
+import { html } from '../lib.js';
 import { createAlbum } from '../api/data.js';
-
-
 
 const createTemplate = (onSubmit) => html`
 <section class="createPage">
@@ -52,16 +50,10 @@ export function createPage(ctx) {
         const genre = formData.get('genre').trim();
         const description = formData.get('description').trim();
 
-        //if( formData.values().some(x => x == ''))
         if (name == '' || imgUrl == '' || price == '' || releaseDate == ''
             || artist == '' || genre == '' || description == '') {
             return alert('All fields are required!');
         }
-
-        // if (category != 'JavaScript' && category != 'C#'
-        //     && category != 'Java' && category != 'Python') {
-        //     return alert('Please select a valid category!');
-        // }
 
         await createAlbum({
             name,

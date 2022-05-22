@@ -1,7 +1,5 @@
-import { html, nothing } from '../lib.js';
+import { html } from '../lib.js';
 import { register } from '../api/data.js';
-
-
 
 const registerTemplate = (onSubmit) => html`
 <section id="registerPage">

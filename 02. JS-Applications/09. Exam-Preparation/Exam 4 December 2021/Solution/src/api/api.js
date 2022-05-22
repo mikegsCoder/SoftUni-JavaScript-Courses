@@ -1,22 +1,21 @@
 import { clearUserData, getUserData, setUserData } from "../util.js";
 
 const host = 'http://localhost:3030';
-// const host = 'http://localhost:3000';
 
 async function request(url, options) {
     try {
         const response = await fetch(host + url, options);
 
-        if(response.ok != true) {
-            if(response.status == 403) {
+        if (response.ok != true) {
+            if (response.status == 403) {
                 sessionStorage.clear();
             }
-            
+
             const error = await response.json();
             throw new Error(error.message);
         }
 
-        if(response.status == 204) {
+        if (response.status == 204) {
             return response;
         }
 
@@ -27,25 +26,25 @@ async function request(url, options) {
         }
 
     } catch (err) {
-        alert(err.message);   
+        alert(err.message);
         throw err;
     }
 };
 
 function createOptions(method = 'get', data) {
     const options = {
-        method : method,
-        headers : {}
+        method: method,
+        headers: {}
     }
 
-    if(data != undefined) {
+    if (data != undefined) {
         options.headers['Content-Type'] = 'application/json';
         options.body = JSON.stringify(data);
     }
 
     const userData = getUserData();
 
-    if(userData != null) {
+    if (userData != null) {
         options.headers['X-Authorization'] = userData.token;
     }
     return options;
@@ -68,31 +67,25 @@ export async function del(url) {
 };
 
 export async function login(email, password) {
-    const result = await request('/users/login', createOptions('post', {email, password}));
+    const result = await request('/users/login', createOptions('post', { email, password }));
 
     setUserData({
-        email : result.email,
-        token : result.accessToken,
-        id : result._id,
+        email: result.email,
+        token: result.accessToken,
+        id: result._id,
     })
-   
+
 };
 
 export async function register(email, password) {
-    const result = await request('/users/register', createOptions('post', {email, password}));
+    const result = await request('/users/register', createOptions('post', { email, password }));
 
     setUserData({
-        email : result.email,
-        token : result.accessToken,
-        id : result._id,
+        email: result.email,
+        token: result.accessToken,
+        id: result._id,
     });
 };
-
-// export async function logout() {
-//     await request('/users/logout', createOptions());
-
-//     clearUserData();
-// };
 
 export async function logout() {
     get('/users/logout');

@@ -1,7 +1,5 @@
-import { html, nothing } from '../lib.js';
+import { html } from '../lib.js';
 import { getAlbumById, editAlbum } from '../api/data.js';
-
-
 
 const editTemplate = (album, onSubmit) => html`
 <section class="editPage">
@@ -29,8 +27,7 @@ const editTemplate = (album, onSubmit) => html`
                 <input id="genre" name="genre" class="genre" type="text" .value=${album.genre}>
 
                 <label for="description" class="vhide">Description</label>
-                <textarea name="description" class="description" rows="10"
-                    cols="10">${album.description}</textarea>
+                <textarea name="description" class="description" rows="10" cols="10">${album.description}</textarea>
 
                 <button class="edit-album" type="submit">Edit Album</button>
             </div>
@@ -54,7 +51,6 @@ export async function editPage(ctx) {
         const genre = formData.get('genre').trim();
         const description = formData.get('description').trim();
 
-        //if( formData.values().some(x => x == ''))
         if (name == '' || imgUrl == '' || price == '' || releaseDate == ''
             || artist == '' || genre == '' || description == '') {
             return alert('All fields are required!');

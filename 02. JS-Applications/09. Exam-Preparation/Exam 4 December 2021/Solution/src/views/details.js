@@ -2,8 +2,6 @@ import { html, nothing } from '../lib.js';
 import { deleteAlbum, getAlbumById } from '../api/data.js';
 import { getUserData } from '../util.js';
 
-
-
 const detailsTemplate = (album, isOwner, onDelete) => html`
 <section id="detailsPage">
     <div class="wrapper">
@@ -22,11 +20,7 @@ const detailsTemplate = (album, isOwner, onDelete) => html`
             </div>
 
             ${albumControlsTemplate(album, isOwner, onDelete)}
-            <!-- Only for registered user and creator of the album-->
-            <!-- <div class="actionBtn">
-                <a href="#" class="edit">Edit</a>
-                <a href="#" class="remove">Delete</a>
-            </div> -->
+
         </div>
     </div>
 </section>`;
@@ -38,22 +32,15 @@ const albumControlsTemplate = (album, isOwner, onDelete) => {
                 <a href="/edit/${album._id}" class="edit">Edit</a>
                 <a @click=${onDelete} href="javascript:void(0)" class="remove">Delete</a>
             </div>`
-
-        // <a @click=${onDelete} href="javascript:void(0)" class="btn delete">Delete</a>
-        // <a href="/edit/${article._id}" class="btn edit">Edit</a>`
-
     } else {
         return nothing;
     }
 };
 
 export async function detailsPage(ctx) {
-    //console.log('In Details')
-
     const userData = getUserData();
 
     const album = await getAlbumById(ctx.params.id);
-
     const isOwner = userData && userData.id == album._ownerId;
 
     ctx.render(detailsTemplate(album, isOwner, onDelete));

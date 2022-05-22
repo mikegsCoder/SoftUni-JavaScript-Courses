@@ -1,7 +1,4 @@
-import { html, nothing } from '../lib.js';
-// import { getMostRecentArticles } from '../api/data.js';
-
-
+import { html } from '../lib.js';
 
 const homeTemplate = () => html`
 <section id="welcomePage">
@@ -15,9 +12,6 @@ const homeTemplate = () => html`
     </div>
 </section>`;
 
-
-
 export async function homePage(ctx) {
-
     ctx.render(homeTemplate());
 }
