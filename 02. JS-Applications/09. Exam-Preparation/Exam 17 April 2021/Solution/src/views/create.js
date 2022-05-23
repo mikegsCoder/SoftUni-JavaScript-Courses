@@ -1,7 +1,6 @@
 import { html } from '../lib.js';
 import { createItem } from '../api/data.js';
 
-
 const createTemplate = (onSubmit) => html`
 <section id="create-page" class="create">
     <form @submit=${onSubmit} id="create-form" action="" method="">
@@ -54,7 +53,6 @@ export function createPage(ctx) {
         const imageUrl = formData.get('imageUrl').trim();
         const type = formData.get('type').trim();
 
-        //if( formData.values().some(x => x == ''))
         if (name == '' || type == '' || description == '' || imageUrl == '') {
             return alert('All fields are required!');
         }

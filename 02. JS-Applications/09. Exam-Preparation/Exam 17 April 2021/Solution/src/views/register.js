@@ -1,8 +1,6 @@
 import { html } from '../lib.js';
 import { register } from '../api/data.js';
 
-
-
 const registerTemplate = (onSubmit) => html`
 <section id="register-page" class="register">
     <form @submit=${onSubmit} id="register-form" action="" method="">

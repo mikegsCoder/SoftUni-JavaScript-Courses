@@ -2,8 +2,6 @@ import { html, nothing } from '../lib.js';
 import { deleteItem, getItemById, getMyLikeByItemId, likeItem, getLikesByItemId } from '../api/data.js';
 import { getUserData } from '../util.js';
 
-
-
 const detailsTemplate = (pet, isOwner, onDelete, likes, showLikeButton, onLike) => html`
 <section id="details-page" class="details">
     <div class="pet-information">
@@ -14,17 +12,8 @@ const detailsTemplate = (pet, isOwner, onDelete, likes, showLikeButton, onLike) 
 
             ${petControlTemplate(pet, isOwner, onDelete)}
 
-            <!-- Edit/Delete buttons ( Only for creator of this pet )  -->
-            <!-- <a class="button" href="#">Edit</a>
-            <a class="button" href="#">Delete</a> -->
-
             ${likeControlTemplate(showLikeButton, onLike)}
 
-            <!-- Bonus -->
-            <!-- Like button ( Only for logged-in users, which is not creators of the current pet ) -->
-            <!-- <a class="button" href="#">Like</a> -->
-
-            <!-- ( for Guests and Users )  -->
             <div class="likes">
                 <img class="hearts" src="/images/heart.png">
                 <span id="total-likes">Likes: ${likes}</span>
@@ -38,16 +27,11 @@ const detailsTemplate = (pet, isOwner, onDelete, likes, showLikeButton, onLike) 
     </div>
 </section>`;
 
-
-
 const petControlTemplate = (pet, isOwner, onDelete) => {
     if (isOwner) {
         return html`
             <a class="button" href="/edit/${pet._id}">Edit</a>
             <a @click=${onDelete} class="button" href="javascript:void(0)">Delete</a>`
-
-        // <a @click=${onDelete} class="btn-delete" href="javascript:void(0)">Delete</a>
-        // <a class="btn-edit" href="/edit/${theater._id}">Edit</a>`;
     } else {
         return nothing;
     }

@@ -29,7 +29,8 @@ body {
 
 .login form,
 .register form,
-.create form, .edit form {
+.create form,
+.edit form {
     margin: 5rem auto;
 }
 
@@ -137,6 +138,7 @@ div.actions {
     display: flex;
     justify-content: center;
 }
+
 div.actions a {
     margin-right: 10px;
     height: 25px;
@@ -184,6 +186,7 @@ textarea#description {
     height: 100px;
     resize: none;
 }
+
 .otherPet {
     align-items: inherit;
     width: 24%;

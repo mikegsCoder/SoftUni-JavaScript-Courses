@@ -11,7 +11,6 @@ const endPoints = {
     createItem: `/data/${items}`,
     itemById: `/data/${items}/`,
 
-
     //-----My-ITEMS-----
     getMyItems: (userId) => `/data/${items}?where=_ownerId%3D%22${userId}%22&sortBy=_createdOn%20desc`,
 
@@ -19,7 +18,7 @@ const endPoints = {
     likeItem: '/data/likes',
     getLikesById: (petId) => `/data/likes?where=petId%3D%22${petId}%22&distinct=_ownerId&count`,
     getMyLikeById: (petId, userId) => `/data/likes?where=petId%3D%22${petId}%22%20and%20_ownerId%3D%22${userId}%22&count`
- 
+
 }
 
 export async function getAllItems() {
@@ -48,7 +47,7 @@ export async function deleteItem(id) {
 export async function getMyItems(userId) {
     return api.get(endPoints.getMyItems(userId));
 }
-
+//-------------------------------------
 
 //----------------LIKE----------------
 export async function likeItem(petId) {

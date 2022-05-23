@@ -1,8 +1,6 @@
 import { html } from '../lib.js';
 import { getAllItems } from '../api/data.js';
 
-
-
 const homeTemplate = (pets) => html`
 <section id="dashboard-page" class="dashboard">
     <h1>Dashboard</h1>
@@ -12,7 +10,6 @@ const homeTemplate = (pets) => html`
         : html`<ul class="other-pets-list">${pets.map(petPreview)}</ul>`}
 
 </section>`;
-
 
 const petPreview = (pet) => html`
 <li class="otherPet">
