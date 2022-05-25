@@ -24,7 +24,8 @@ body {
     clear: both;
 }
 
-header, footer {
+header,
+footer {
     background-color: darkslategray;
     color: white;
     width: 100%;
@@ -71,7 +72,8 @@ footer {
     color: rgb(204, 248, 204);
 }
 
-#user, #guest {
+#user,
+#guest {
     margin: 0;
     padding: 0;
 }

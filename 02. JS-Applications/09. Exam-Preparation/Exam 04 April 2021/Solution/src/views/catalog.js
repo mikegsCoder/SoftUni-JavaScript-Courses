@@ -1,6 +1,5 @@
-import { html, nothing } from '../lib.js';
+import { html } from '../lib.js';
 import { getAllItems } from '../api/data.js';
-
 
 const catalogTemplate = (articles) => html`
 <section id="catalog-page" class="content catalogue">
@@ -20,9 +19,8 @@ const articlePreview = (article) => html`
     </article>
 </a>`;
 
-
-
 export async function catalogPage(ctx) {
     const articles = await getAllItems();
+
     ctx.render(catalogTemplate(articles));
 }

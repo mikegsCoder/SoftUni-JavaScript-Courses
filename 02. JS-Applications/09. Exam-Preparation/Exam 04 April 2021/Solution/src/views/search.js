@@ -1,6 +1,5 @@
-import { html, nothing } from '../lib.js';
+import { html } from '../lib.js';
 import { search } from '../api/data.js';
-
 
 const searchTemplate = (articles, onSearch) => html`
 <section id="search-page" class="content">
@@ -16,13 +15,11 @@ const searchTemplate = (articles, onSearch) => html`
     <div class="search-container">
 
         ${articles.length == 0
-        ? html`<h3 class="no-articles">No matching articles</h3>`
-        : articles.map(articlePreview)}
+            ? html`<h3 class="no-articles">No matching articles</h3>`
+            : articles.map(articlePreview)}
 
     </div>
 </section>`;
-
-
 
 const articlePreview = (erticle) => html`
 <a class="article-preview" href="/details/${erticle._id}">
@@ -33,8 +30,6 @@ const articlePreview = (erticle) => html`
 </a>`;
 
 export async function searchPage(ctx) {
-    //console.log('in search');
-
     let articles = [];
     ctx.render(searchTemplate(articles, onSearch));
 

@@ -1,8 +1,6 @@
 import { html } from '../lib.js';
 import { getItemById, editItem } from '../api/data.js';
 
-
-
 const editTemplate = (article, onSubmit) => html`
 <section id="edit-page" class="content">
     <h1>Edit Article</h1>
@@ -16,7 +14,8 @@ const editTemplate = (article, onSubmit) => html`
 
             <p class="field category">
                 <label for="category">Category:</label>
-                <input type="text" name="category" id="category" placeholder="Enter article category" .value=${article.category}>
+                <input type="text" name="category" id="category" placeholder="Enter article category"
+                    .value=${article.category}>
             </p>
             <p class="field">
                 <label for="content">Content:</label>
@@ -33,7 +32,7 @@ const editTemplate = (article, onSubmit) => html`
 
 export async function editPage(ctx) {
     const article = await getItemById(ctx.params.id);
-    //console.log(pet);
+
     ctx.render(editTemplate(article, onSubmit));
 
     async function onSubmit(event) {
@@ -43,9 +42,7 @@ export async function editPage(ctx) {
         const title = formData.get('title').trim();
         const category = formData.get('category').trim();
         const content = formData.get('content').trim();
-        
 
-        //if( formData.values().some(x => x == ''))
         if (title == '' || category == '' || content == '') {
             return alert('All fields are required!');
         }

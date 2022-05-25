@@ -41,18 +41,14 @@ export async function deleteItem(id) {
 }
 //-------------------------------------
 
-
-
 //-------------LATEST-ITEMS------------
 export async function getLatestItems() {
     return api.get(endPoints.getLatestItems);
 }
 //-------------------------------------
 
-
-
 //---------------SEARCH----------------
-export async function search(query){
+export async function search(query) {
     return api.get(endPoints.search(query));
 }
 //-------------------------------------

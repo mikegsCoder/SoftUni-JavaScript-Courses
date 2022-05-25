@@ -2,8 +2,6 @@ import { html, nothing } from '../lib.js';
 import { deleteItem, getItemById } from '../api/data.js';
 import { getUserData } from '../util.js';
 
-
-
 const detailsTemplate = (article, isOwner, onDelete) => html`
 <section id="details-page" class="content details">
     <h1>${article.title}</h1>
@@ -11,12 +9,9 @@ const detailsTemplate = (article, isOwner, onDelete) => html`
     <div class="details-content">
         <strong>Published in category ${article.category}</strong>
         <p>${article.content}</p>
-        
+
         <div class="buttons">
             ${articleControlsTemplate(article, isOwner, onDelete)}
-
-            <!-- <a href="#" class="btn delete">Delete</a>
-            <a href="#" class="btn edit">Edit</a> -->
 
             <a href="/" class="btn edit">Back</a>
         </div>
@@ -28,18 +23,12 @@ const articleControlsTemplate = (article, isOwner, onDelete) => {
         return html`
             <a @click=${onDelete} href="javascript:void(0)" class="btn delete">Delete</a>
             <a href="/edit/${article._id}" class="btn edit">Edit</a>`
-
-        // <a @click=${onDelete} href="javascript:void(0)" class="btn delete">Delete</a>
-        // <a href="/edit/${article._id}" class="btn edit">Edit</a>`
-
     } else {
         return nothing;
     }
 };
 
 export async function detailsPage(ctx) {
-    //console.log('In Details')
-
     const userData = getUserData();
 
     const article = await getItemById(ctx.params.id);

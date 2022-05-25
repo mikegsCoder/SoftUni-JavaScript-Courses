@@ -1,8 +1,6 @@
 import { html } from '../lib.js';
 import { createItem } from '../api/data.js';
 
-
-
 const createTemplate = (onSubmit) => html`
 <section id="create-page" class="content">
     <h1>Create Article</h1>
@@ -42,7 +40,6 @@ export function createPage(ctx) {
         const category = formData.get('category').trim();
         const content = formData.get('content').trim();
         
-        //if( formData.values().some(x => x == ''))
         if (title == '' || category == '' || content == '') {
             return alert('All fields are required!');
         }

@@ -1,8 +1,6 @@
 import { html } from '../lib.js';
 import { login } from '../api/data.js';
 
-
-
 const loginTemplate = (onSubmit) => html`
 <section id="login-page" class="content auth">
     <h1>Login</h1>
@@ -42,8 +40,6 @@ export function loginPage(ctx) {
         if (email == '' || password == '') {
             return alert('Please fill all fields!');
         }
-
-        //console.log(username, password);
 
         await login(email, password);
         ctx.updateUserNav();

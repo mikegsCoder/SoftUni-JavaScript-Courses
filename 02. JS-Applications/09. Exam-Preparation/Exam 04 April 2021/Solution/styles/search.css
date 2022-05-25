@@ -3,12 +3,12 @@ section.search {
     margin: 20px auto;
 }
 
-.search form{
+.search form {
     display: flex;
     flex-direction: column;
 }
 
-.field.search{
+.field.search {
     width: 50%;
     margin: auto;
 }
