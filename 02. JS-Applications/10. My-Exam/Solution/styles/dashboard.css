@@ -1,7 +1,6 @@
 .animals-dashboard {
     display: flex;
-
-    overflow-x:scroll;
+    overflow-x: scroll;
     scroll-behavior: smooth;
     margin-left: 20px;
     margin-right: 20px;
@@ -23,14 +22,13 @@
     border-radius: 12px;
 }
 
-.animals-dashboard h2{
+.animals-dashboard h2 {
     font-size: 22px;
     font-weight: bolder;
 }
 
-.animals-dashboard h3{
+.animals-dashboard h3 {
     font-size: 18px;
-
 }
 
 .animal-image-cover {
@@ -46,14 +44,14 @@
 
 .animals-board .btn {
     width: 100px;
-	height: auto;
-	cursor: pointer;
-	border: none;
+    height: auto;
+    cursor: pointer;
+    border: none;
     border-radius: 10px;
-	display: inline;
-	align-items: center;
-	background-color: #F34515;
-	transition: 500ms;
+    display: inline;
+    align-items: center;
+    background-color: #F34515;
+    transition: 500ms;
     color: black;
     font-size: 18px;
     font-weight: bold;
@@ -73,7 +71,7 @@
 }
 
 .action>a:hover {
-	box-shadow: none;
+    box-shadow: none;
 }
 
 .no-pets {
