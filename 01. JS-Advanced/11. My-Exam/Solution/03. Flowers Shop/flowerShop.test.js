@@ -23,7 +23,7 @@ describe('flowerShop', function () {
             assert.throw(() => flowerShop.calcPriceOfFlowers('flower', 1, []));
             assert.throw(() => flowerShop.calcPriceOfFlowers('flower', 1, {}));
             assert.throw(() => flowerShop.calcPriceOfFlowers('flower', 1, 1.1));
-        })
+        });
 
         it('calcPriceOfFlowers works properly with valid data', function () {
             assert.equal(flowerShop.calcPriceOfFlowers('flower', 1, 1), 'You need $1.00 to buy flower!');
@@ -38,9 +38,10 @@ describe('flowerShop', function () {
             assert.equal(flowerShop.checkFlowersAvailable('flower', ['lale', 'cwete', 'flower', 'roza']), 'The flower are available!');
             assert.equal(flowerShop.checkFlowersAvailable('flower', ['flower', 'lale', 'cwete', 'roza']), 'The flower are available!');
         });
+
         it('checkFlowersAvailable returns flower are sold', function () {
             assert.equal(flowerShop.checkFlowersAvailable('flower', ['lale', 'cwete', 'roza']), 'The flower are sold! You need to purchase more!');
-        })
+        });
     });
 
     describe('sellFlowers', function () {
@@ -60,8 +61,9 @@ describe('flowerShop', function () {
             assert.throw(() => flowerShop.sellFlowers([], -1));
             assert.throw(() => flowerShop.sellFlowers([], 2));
         });
-        it('sellFlowers works properly with valid data', function(){
+
+        it('sellFlowers works properly with valid data', function () {
             assert.equal(flowerShop.sellFlowers(['1', '2', '3'], 2), '1 / 2');
-        })
+        });
     });
 });
