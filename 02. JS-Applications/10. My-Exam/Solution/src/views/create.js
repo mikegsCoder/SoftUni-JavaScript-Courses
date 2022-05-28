@@ -45,7 +45,6 @@ export function createPage(ctx) {
         const weight = formData.get('weight').trim();
         const image = formData.get('image').trim();
 
-        //if( formData.values().some(x => x == ''))
         if (name == '' || breed == '' || age == '' || weight == '' || image == '') {
             return alert('All fields are required!');
         }

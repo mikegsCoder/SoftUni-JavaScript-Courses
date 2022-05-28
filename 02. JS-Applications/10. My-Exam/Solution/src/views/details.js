@@ -18,21 +18,13 @@ const detailsTemplate = (pet, hasUser, isOwner, onDelete, donations, showDonatio
             </div>
 
             ${hasUser
-            ? html`
-            <div class="actionBtn">
-                ${petControlTemplate(pet, isOwner, onDelete)}
-                ${donateControlTemplate(showDonationButton, onDonate)}
-            </div>`
-            : nothing}
+                ? html`
+                <div class="actionBtn">
+                    ${petControlTemplate(pet, isOwner, onDelete)}
+                    ${donateControlTemplate(showDonationButton, onDonate)}
+                </div>`
+                : nothing}
 
-            <!-- if there is no registered user, do not display div-->
-            <!-- <div class="actionBtn"> -->
-                <!-- Only for registered user and creator of the pets-->
-                <!-- <a href="#" class="edit">Edit</a>
-                <a href="#" class="remove">Delete</a> -->
-                <!--(Bonus Part) Only for no creator and user-->
-                <!-- <a href="#" class="donate">Donate</a> -->
-            <!-- </div> -->
         </div>
     </div>
 </section>`;

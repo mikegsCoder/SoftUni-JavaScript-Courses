@@ -34,7 +34,6 @@ const editTemplate = (pet, onSubmit) => html`
 
 export async function editPage(ctx) {
     const pet = await getItemById(ctx.params.id);
-    // console.log(pet);
     ctx.render(editTemplate(pet, onSubmit));
 
     async function onSubmit(event) {
@@ -47,7 +46,6 @@ export async function editPage(ctx) {
         const weight = formData.get('weight').trim();
         const image = formData.get('image').trim();
 
-        //if( formData.values().some(x => x == ''))
         if (name == '' || breed == '' || age == '' || weight == '' || image == '') {
             return alert('All fields are required!');
         }

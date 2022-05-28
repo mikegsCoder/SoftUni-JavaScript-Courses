@@ -7,11 +7,11 @@ const catalogTemplate = (pets) => html`
     <div class="animals-dashboard">
 
         ${pets.length == 0
-        ? html`
-        <div>
-            <p class="no-pets">No pets in dashboard</p>
-        </div>`
-        : pets.map(petPreview)}
+            ? html`
+            <div>
+                <p class="no-pets">No pets in dashboard</p>
+            </div>`
+            : pets.map(petPreview)}
 
     </div>
 </section>`;
@@ -29,7 +29,7 @@ const petPreview = (pet) => html`
 </div>`;
 
 export async function catalogPage(ctx) {
-    // console.log('in catalog page')
     const pets = await getAllItems();
+    
     ctx.render(catalogTemplate(pets));
 }
