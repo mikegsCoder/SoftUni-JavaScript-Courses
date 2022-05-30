@@ -1,0 +1,28 @@
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+}
+
+a, footer p {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+nav, footer {
+    padding: 5px;
+    background-color: blue;
+}
+
+main {
+    padding: 5% 20%;
+}
+
+h1, footer p {
+    text-align: center;
+}
