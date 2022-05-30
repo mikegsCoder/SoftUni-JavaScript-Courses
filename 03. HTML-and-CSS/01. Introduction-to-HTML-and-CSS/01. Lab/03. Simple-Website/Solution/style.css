@@ -8,13 +8,15 @@ li {
     padding: 10px;
 }
 
-a, footer p {
+a,
+footer p {
     text-decoration: none;
     font-size: 20px;
     color: white;
 }
 
-nav, footer {
+nav,
+footer {
     padding: 5px;
     background-color: blue;
 }
@@ -23,6 +25,7 @@ main {
     padding: 5% 20%;
 }
 
-h1, footer p {
+h1,
+footer p {
     text-align: center;
 }
