@@ -1,4 +1,4 @@
-main{
+main {
     width: 400px;
     background-color: #dddddd;
     border: 1px solid #000000;
@@ -6,6 +6,6 @@ main{
     padding: 10px;
 }
 
-p{
+p {
     font-size: 18px;
 }
