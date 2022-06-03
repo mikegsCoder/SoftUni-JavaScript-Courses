@@ -1,4 +1,4 @@
-#wrapper{
+#wrapper {
     width: 700px;
     height: 730px;
     border: 1px solid #000000;
@@ -8,26 +8,26 @@
     color: #2ea620
 }
 
-img{
+img {
     width: 200px;
     margin-right: 10px;
     vertical-align: middle;
 }
 
-li{
+li {
     width: 595px;
     padding: 10px;
     margin-bottom: 5px;
     font-size: 14px;
-    border: 1px solid #000000;    
+    border: 1px solid #000000;
 }
 
-.text{
+.text {
 
-    color:  #3F51B5;
+    color: #3F51B5;
 }
 
-ul{
+ul {
 
     list-style: none;
 }
