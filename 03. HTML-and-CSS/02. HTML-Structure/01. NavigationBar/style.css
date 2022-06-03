@@ -1,20 +1,19 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
     background-color: #CCCCCC;
-    
+
 }
 
-ul{
+ul {
     background-color: #444;
     text-align: center;
     padding: 0px;
-
     margin: 0px;
     list-style: none;
 }
 
-li{
+li {
     display: inline-block;
     size: 24px;
     line-height: 40px;
@@ -22,8 +21,7 @@ li{
     padding: 20px;
 }
 
-a{
+a {
     text-decoration: none;
     color: #ffffff;
-
 }
