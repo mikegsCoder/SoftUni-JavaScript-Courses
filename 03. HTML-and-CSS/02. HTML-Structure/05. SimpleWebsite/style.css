@@ -1,11 +1,10 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
     background-color: #cccccc;
 }
 
-
-body ul{
+body ul {
     background-color: #444444;
     text-align: center;
     padding: 0px;
@@ -13,43 +12,41 @@ body ul{
     list-style: none;
 }
 
-body li{
+body li {
     display: inline-block;
     color: white;
-
     size: 24px;
     line-height: 40px;
     height: 40px;
     padding: 20px;
 }
 
-body a{
+body a {
     text-decoration: none;
     color: #ffffff;
 }
 
-body section{
+body section {
     margin-left: 20px;
-
 }
 
-body section article header h1{
+body section article header h1 {
     font-size: 28px;
 }
 
-body section article header p{
+body section article header p {
     font-style: italic;
 }
 
-body section article p{
+body section article p {
     font-size: 24px;
 }
 
-body footer{
+body footer {
     background-color: #444444;
 }
 
-body footer p{
+body footer p {
     color: #fff;
     text-align: center;
     padding: 10px;
