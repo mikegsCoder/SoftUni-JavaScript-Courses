@@ -1,4 +1,4 @@
-header{
+header {
     border-radius: 3px;
     padding: 8px 10px;
     background-color: #DCEAF4;
@@ -10,42 +10,36 @@ header * {
     vertical-align: middle;
 }
 
-/* header nav {
-    display: inline;
-    vertical-align: middle;
-} */
-
-nav ul{
+nav ul {
     margin: 0;
     padding: 10px;
 }
 
-nav li{
+nav li {
     margin: 10px;
 }
 
-nav li a{
+nav li a {
     text-decoration: none;
 }
 
-body{
+body {
     background-color: #B7D7E8;
 }
 
-section h2{
+section h2 {
     margin: 15px 10px;
 }
 
-article{
+article {
     display: table-cell;
     width: 50%;
     padding: 10px 15px;
     background-color: #E5F0F7;
     border: 10px solid #B7D7E8;
-    
 }
 
-footer{
+footer {
     margin: 5px;
     padding: 5px 10px;
     border-radius: 3px;
@@ -53,6 +47,6 @@ footer{
     border: 1px solid #BFCACB;
 }
 
-footer p{
-margin: 5px;
+footer p {
+    margin: 5px;
 }
