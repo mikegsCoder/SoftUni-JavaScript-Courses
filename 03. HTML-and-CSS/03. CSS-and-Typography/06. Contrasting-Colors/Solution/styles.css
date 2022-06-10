@@ -1,13 +1,11 @@
-body{
+body {
     font-family: Helvetica, sans-serif;
     line-height: 1.5;
     font-size: 18px;
     background-color: white;
-    
 }
 
-
-article{
+article {
     margin: 54px;
     padding: 36px;
     border-radius: 16px;
@@ -16,6 +14,6 @@ article{
     background-color: rgb(51, 102, 153);
 }
 
-h1{
+h1 {
     font-family: Georgia, serif;
 }
