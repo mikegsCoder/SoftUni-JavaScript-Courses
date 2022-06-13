@@ -1,12 +1,8 @@
-/* TODO: style the html */
-
-body{
-
+body {
     background-color: lightslategray;
 }
 
-p{
-
+p {
     width: 300px;
     padding: 20px;
     margin: auto;
@@ -17,5 +13,4 @@ p{
     border-bottom-right-radius: 15px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
-
 }
