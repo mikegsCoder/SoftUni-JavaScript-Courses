@@ -1,5 +1,4 @@
-article{
-
+article {
     width: 500px;
     height: 200px;
     background-color: lightgray;
@@ -7,18 +6,15 @@ article{
     overflow: auto;
 }
 
-h2{
-
+h2 {
     text-transform: uppercase;
     text-align: center;
 }
 
-h3{
-
+h3 {
     text-align: center;
 }
 
-p{
-
+p {
     text-indent: 30px;
 }
