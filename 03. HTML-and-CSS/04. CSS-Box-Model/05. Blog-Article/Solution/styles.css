@@ -1,16 +1,15 @@
-body{
+body {
     background-color: #02475e;
 }
 
-article h2{
+article h2 {
     font-size: 36px;
-    
     color: #fefecc;
     margin: 12px;
     text-align: center;
 }
 
-article p{
+article p {
     color: #eee;
     font-family: Arial, sans-serif;
     line-height: 24px;
@@ -18,17 +17,14 @@ article p{
     text-indent: 30px;
 }
 
-
-article div{
+article div {
     margin-bottom: 30px;
-
     border-top: 2px solid #fff;
     position: relative;
     top: 20px;
 }
 
-article div span{
-
+article div span {
     width: 120px;
     font-size: 14px;
     text-align: center;
