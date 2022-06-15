@@ -1,35 +1,29 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
-html{
+html {
     font-family: Helvetica, sans-serif;
     padding: 50px 100px;
 }
 
-header h1{
+header h1 {
     display: inline-block;
 }
 
-
-nav{
+nav {
     display: inline-block;
- 
 }
 
-nav li{
-
+nav li {
     list-style: none;
     display: inline-block;
     padding: 0 10px;
-} 
+}
 
-nav a{
-
+nav a {
     text-decoration: none;
     color: rgb(45, 172, 45);
 }
 
-main h2{
-
+main h2 {
     font-family: 'Playfair Display', sans-serif;
 }
