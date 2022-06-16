@@ -1,31 +1,26 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     background-color: rgb(220, 220, 220);
-
 }
 
-.gallery{
-   width: 70%;
-   margin: 0 auto;
-
+.gallery {
+    width: 70%;
+    margin: 0 auto;
 }
 
-.images ul{
+.images ul {
     list-style: none;
     display: inline-block;
-
 }
 
-
-section li{
+section li {
     background-color: white;
     vertical-align: middle;
     display: inline-block;
-
     margin-right: 20px;
     margin-bottom: 20px;
     padding: 10px;
