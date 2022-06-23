@@ -1,43 +1,39 @@
-body{
+body {
     margin: 20px;
     padding: 20px;
-
 }
 
-header{
+header {
     display: flex;
-    border-bottom: 2px solid rgb(0,0,0);
-
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
-header, a, p{
+header,
+a,
+p {
     font-family: Helvetica, sans-serif;
-
     font-size: 13px;
     line-height: 1.5;
-} 
+}
 
-.title{
+.title {
     font-size: 1.7rem;
     flex-basis: 70%
 }
 
-
-header ul{
+header ul {
     list-style: none;
     display: flex;
     flex-basis: 30%;
     justify-content: space-between;
-
     gap: 15px;
 }
 
-
-header ul li a{
-   text-decoration: none;
-   color: rgb(0, 153, 0);
+header ul li a {
+    text-decoration: none;
+    color: rgb(0, 153, 0);
 }
 
-h2{
+h2 {
     font-weight: 100;
 }
