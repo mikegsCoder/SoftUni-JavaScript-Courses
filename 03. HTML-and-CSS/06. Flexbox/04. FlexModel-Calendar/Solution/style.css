@@ -1,47 +1,45 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-div, section{
+div,
+section {
     display: flex;
     justify-content: center;
 }
 
-.container{
+.container {
     max-width: 65vw;
     margin: 80px auto;
 }
 
-span{
+span {
     border: 1px solid black;
-    
     padding: 15px 15px 70px 15px;
 }
 
-.notes{
+.notes {
     flex-direction: column;
 }
 
-.week{
+.week {
     flex-wrap: wrap;
 }
 
 .workweek,
-.weekend{
-
+.weekend {
     flex-basis: 100%;
     display: flex;
     justify-content: center;
 }
 
-.weekday{
+.weekday {
     flex-grow: 1;
     display: flex;
     justify-content: center;
 }
 
-.notes span{
+.notes span {
     flex-grow: 1;
     text-align: center;
-
 }
