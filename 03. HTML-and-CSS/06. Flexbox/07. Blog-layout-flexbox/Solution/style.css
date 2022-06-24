@@ -1,90 +1,82 @@
-body{
+body {
     margin: 15px 20px;
-    padding: 10px; 
+    padding: 10px;
     background: rgb(238, 238, 238);
-
 }
 
-.page{
+.page {
     display: flex;
     flex-wrap: wrap;
-
 }
 
-header{
+header {
     border-bottom: 3px solid black;
     text-transform: uppercase;
-
     flex-basis: 100%;
 }
 
-
-.title{
+.title {
     font-family: Helvetica, sans-serif;
-
 }
 
-main{
+main {
     line-height: 1.5;
     flex-basis: 55%;
     margin-right: 12rem;
 }
 
-
-aside{
+aside {
     flex-basis: 25%;
-
 }
 
-img{
+img {
     padding: 10px;
-    background: rgb(255,255, 255);
+    background: rgb(255, 255, 255);
     border: 2px solid black;
     box-shadow: 0px 0px 15px 1px #5E5E5E;
-
 }
 
-.image1{
+.image1 {
     float: right;
     margin: 0 15px 15px 15px;
-
 }
 
-.image2{
+.image2 {
     float: left;
     margin-right: 15px;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Georgia, serif;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     justify-content: space-between;
-
 }
 
-.wrapper>p{
+.wrapper>p {
     width: 170%;
     margin-right: 10px;
-
 }
 
-blockquote{
+blockquote {
     font-family: Georgia, serif;
     color: rgb(125, 122, 127);
     font-size: 0.9rem;
     line-height: 1.5;
     font-style: italic;
     border-left: 2px solid rgb(221, 221, 221);
-
     padding-left: 40px;
     position: relative;
-
 }
 
-span{
+span {
     position: absolute;
     font-style: italic;
     position: absolute;
@@ -93,15 +85,12 @@ span{
     right: 10px;
 }
 
-
-aside ul{
+aside ul {
     list-style: square;
-
 }
 
-aside ul li a{
+aside ul li a {
     font-family: Helvetica, sans-serif;
     color: rgb(0, 153, 0);
     text-decoration: none;
-
 }
