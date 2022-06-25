@@ -1,20 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Gelasio&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: inherit;
-
 }
 
-html{
+html {
     box-sizing: border-box;
     font-size: 16px;
     line-height: 1.5;
 }
 
-
-body{
+body {
     display: flex;
     flex-direction: column;
     background: rgb(238, 238, 238);
@@ -22,30 +20,28 @@ body{
     height: 100vh;
 }
 
-.title{
+.title {
     text-transform: uppercase;
     border-bottom: 2px solid black;
-
     padding: 20px 10px;
     margin-bottom: 40px;
 }
 
-main{
+main {
     padding: 30px 20px;
 }
 
-main h2{
-  font-family: 'Gelasio', serif;
-  font-weight: 100;
-
+main h2 {
+    font-family: 'Gelasio', serif;
+    font-weight: 100;
 }
 
-main h2, p{ 
-     margin-bottom: 25px;
-
+main h2,
+p {
+    margin-bottom: 25px;
 }
 
-footer{
+footer {
     color: rgb(255, 255, 255);
     background: rgb(102, 102, 102);
     padding: 20px 30px;
