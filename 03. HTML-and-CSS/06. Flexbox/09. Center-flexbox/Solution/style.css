@@ -1,34 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-body{
+body {
     display: flex;
     background-color: rgb(238, 238, 238);
-
     min-height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
-
-div{
+div {
     background-color: rgb(255, 255, 255);
-
-
 }
 
-.card{
+.card {
     box-shadow: 1px 1px 13px -1px black;
     padding: 10px 20px 20px 10px;
     border-radius: 10px;
     width: 380px;
-
 }
 
-p{
+p {
     font-family: Helvetica, sans-serif;
 }
