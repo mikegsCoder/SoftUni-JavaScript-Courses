@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-body{
-    font-family: "Poppins" ;
+body {
+    font-family: "Poppins";
 }
 
-.services{
+.services {
     display: flex;
     flex-direction: column;
     width: 70vw;
@@ -12,57 +12,50 @@ body{
     margin: 100px auto;
     align-items: center;
     padding: 10px;
-
     border: 1px solid black;
 }
 
-.heading{
+.heading {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.heading h1{
+.heading h1 {
     font-size: 35px;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
-.heading h4{
+.heading h4 {
     margin-top: 10px;
     margin-bottom: 30px;
 }
 
-.heading h1 span{
+.heading h1 span {
     color: greenyellow;
 }
 
-.service-cards{
+.service-cards {
     display: flex;
     flex-direction: row;
     width: 90%;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
-.card{
+.card {
     width: 30%;
 
 }
 
-.image-wrapper{
+.image-wrapper {
     width: 100%;
-    /* object-fit: cover; */
     overflow: hidden;
     object-fit: contain;
-    /* object-position: center; */
 }
 
-.image-wrapper img{
-    /* object-fit: cover; */
-}
-
-.service-btn{
+.service-btn {
     color: white;
     background-color: greenyellow;
     border: none;
