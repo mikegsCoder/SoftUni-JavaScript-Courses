@@ -1,10 +1,4 @@
-/* TODO: Add the responsive styles here */
-
 @media screen and (max-width: 600px){
-    /* body{
-        background-color: red;
-    } */
-
     body > header > article > article > article > nav{
         width: 100%;
         margin-inline: auto;
@@ -23,7 +17,6 @@
     .tm-gallery{
         width: 100%;
         margin: 0;
-        /* align-items: center; */
         display: flex;
         justify-content: center;
     }
@@ -31,7 +24,6 @@
     .tm-gallery-page{
         width: 100%;
         margin: 0 auto;
-        
     }
 
     .tm-gallery-item{
@@ -41,7 +33,5 @@
 
     body > main > section.tm-cta-section.tm-section.tm-container-inner{
         width: unset;
-
     }
-
 }
