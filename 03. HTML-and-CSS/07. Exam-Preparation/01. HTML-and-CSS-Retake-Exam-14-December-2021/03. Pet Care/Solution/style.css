@@ -42,3 +42,66 @@ header {
     color: black;
     font-weight: bold;
 }
+
+.top-img {
+    width: 1920px;
+    position: relative;
+    height: 900px;
+}
+
+.header-img {
+    /* border: 3px solid green; */
+
+    width: 100%;
+    /* height: 1200px; */
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.header-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.header-dog {
+    position: relative;
+    top: -650px;
+    right: -600px;
+}
+
+.top-img-text {
+    /* background-color: black; */
+    /* overflow: hidden; */
+    /* max-height: 800px; */
+
+    position: relative;
+    color: white;
+    width: 500px;
+    top: -1500px;
+    left: 300px;
+}
+
+.top-img-text .care {
+    font-size: 100px;
+    font-weight: 100;
+}
+
+.top-img-text h1 {
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+.top-img-text p {
+    /* color: red; */
+    font-size: 20px;
+}
+
+.top-img-text .top-btn {
+    color: orangered;
+    background-color: white;
+    font-size: 20px;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 50px;
+}
