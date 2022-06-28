@@ -167,3 +167,38 @@ header {
     text-align: center;
     font-size: 20px;
 }
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 430px;
+    margin-top: 200px;
+}
+
+.about-heading {
+    font-size: 50px;
+}
+
+.about-subheading {
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    font-size: 15px;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+.about-btn {
+    color: white;
+    background-color: orangered;
+    font-size: 20px;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 50px;
+}
