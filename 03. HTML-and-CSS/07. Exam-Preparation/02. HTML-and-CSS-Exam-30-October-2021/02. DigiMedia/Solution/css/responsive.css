@@ -1,10 +1,4 @@
-/* TODO: Add responsive styles here... */
-
 @media screen and (max-width: 600px){
-    /* body{
-        background-color: red;
-    } */
-
     .navbar{
         justify-content: center;
     }
@@ -48,16 +42,13 @@
     #home > section.container-fluid.hero > article > p,
     #about-us > div > div.container > div > div.col-12.col-sm-12.col-lg-4.service-txt > h2{
         text-align: center;
-
     }
 
     #contact-us > div > div:nth-child(3) > div:nth-child(2) > div{
         display: none;
-
     }
 
     .contact-nav{
-        
         display: flex;
         flex-direction: column;
     }
