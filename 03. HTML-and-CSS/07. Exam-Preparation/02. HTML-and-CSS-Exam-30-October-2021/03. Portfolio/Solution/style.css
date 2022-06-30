@@ -98,3 +98,45 @@ header{
     display: flex;
     justify-content: flex-end;
 }
+
+.hello{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #EFEFEF;
+    margin-top: 40px;
+    padding: 100px;
+}
+
+.hello-img{
+    width: 40%;
+    margin-left: 80px;
+}
+
+.hello-text{
+    width: 50%;
+}
+
+.hello-title{
+    margin-left: 200px;
+}
+
+.hello-title::before{
+    content: '';
+    background-color: #909090;
+    width: 110px;
+    height: 4px;
+    position: absolute;
+    /* top: 30px; */
+    left: 880px;
+    top: 1020px;
+}
+
+.social-media{
+    color: #909090;
+    font-size: 40px;
+}
+
+.social-media i{
+    padding: 10px;
+}
