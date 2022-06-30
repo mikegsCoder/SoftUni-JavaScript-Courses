@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&display=swap');
+
+@import url('https://use.fontawesome.com/releases/v6.1.1/css/all.css');
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+
+    width: 1920;
+    border: 1px solid black;
+}
+
+header{
+    background-color: #EFEFEF;
+    margin: 0;
+
+}
+
+/* .menu{
+    font-display: inline-block;
+    flex-direction: row;
+} */
+
+.menu p{
+    margin: 0;
+    padding: 2.5rem;
+    text-align: end;
+    font-size: 25px;
+}
+
+.menu p i{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.header-text{
+    width: 50%;
+    padding: 150px;
+}
+
+.header-text-heading,
+.hello-title,
+.stairs-text-heading,
+.contact-heading{
+    font-size: 50px;
+    color: #878787;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.header-text-heading strong,
+.hello-title strong,
+.stairs-text-heading strong,
+.contact-heading strong{
+    color: black;
+}
+
+.header-text-content,
+.hello-text-content,
+.stairs-text-content
+.contact-message{
+    /* font-family: "Raleway Itallic"; */
+    color: #909090;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.5;
+    width: 97%;
+}
+
+.header-text-content::after{
+    content: '';
+    height: 100px;
+    width: 4px;
+    /* color: black; */
+    background-color: #878787;
+    position: absolute;
+    top: 570px;
+    left: 150px;
+}
+
+.header-img{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
