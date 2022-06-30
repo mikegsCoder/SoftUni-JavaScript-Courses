@@ -151,3 +151,46 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.stairs{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #EFEFEF;
+    margin-top: 40px;
+    padding: 80px;
+}
+
+.stairs-text{
+    width: 29%;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 100px;
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 20px;
+    /* margin-bottom: 50px; */
+}
+
+.stairs-text::after{
+    content: '';
+    background-color: #909090;
+    height: 90px;
+    width: 4px;
+    position: absolute;
+}
+
+.stairs-img{
+    width: 60%;
+    height: 600px;
+    overflow: hidden;
+    /* object-fit: contain; */
+    padding: 50px;
+    margin-left: 120px;
+
+}
+
+.stairs-img img{
+    max-height: 100%;
+    max-width: 100%;
+}
