@@ -1,19 +1,17 @@
-/* TODO: Add the responsive styles here */
-@media screen and (max-width: 600px){
-    .w3-right{
-        display: none;
-
-
-    }
-
-    #about > article.w3-col.m6.w3-padding-large.w3-hide-small{
+@media screen and (max-width: 600px) {
+    .w3-right {
         display: none;
     }
-    #about > article:nth-child(2), #menu > article:nth-child(1), #menu > article:nth-child(2){
+
+    #about>article.w3-col.m6.w3-padding-large.w3-hide-small {
+        display: none;
+    }
+
+    #about>article:nth-child(2),
+    #menu>article:nth-child(1),
+    #menu>article:nth-child(2) {
         display: flex;
         flex-direction: column;
         width: 100%;
-
     }
-    
 }
