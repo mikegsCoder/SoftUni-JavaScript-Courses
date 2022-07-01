@@ -15,14 +15,13 @@ h4,
 h5,
 h6 {
     font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Poppins', sans-serif; */
 }
 
 p {
     font-family: 'Poppins', sans-serif;
 }
 
-.auto{
+.auto {
     border: 1px solid black;
 
     width: 1700px;
@@ -34,11 +33,11 @@ p {
     padding-bottom: 60px;
 }
 
-.text{
+.text {
     width: 50%;
 }
 
-.icons{
+.icons {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -46,45 +45,43 @@ p {
     margin-top: 40px;
 }
 
-.icons li{
+.icons li {
     display: flex;
     flex-direction: row;
     margin-bottom: 15px;
-    /* margin-left: 0; */
-
 }
 
-.icon-item-img-wrapper{
+.icon-item-img-wrapper {
     width: 70px;
     height: 70px;
     overflow: hidden;
     margin-left: -10px;
 }
 
-.icon-item-img-wrapper img{
+.icon-item-img-wrapper img {
     width: 100%;
 }
 
-.icons-item-text{
+.icons-item-text {
     margin-left: 10px;
 }
 
-.icons-item-text h3{
+.icons-item-text h3 {
     margin: 5px 0 0 0;
 }
 
-.icons-item-text p{
+.icons-item-text p {
     margin-top: 0;
     padding-top: 5px;
 }
 
-.img{
+.img {
     margin-left: 60px;
     width: 50%;
     height: 600px;
 }
 
-.img img{
+.img img {
     width: 100%;
     height: 100%;
 }
