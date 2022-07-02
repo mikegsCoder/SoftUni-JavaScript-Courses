@@ -144,3 +144,34 @@ header {
     text-align: center;
     color: #666360;
 }
+.connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+
+.connect-heading{
+    font-size: 55px;
+    font-weight: 100;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.connect-subheading{
+    font-size: 30px;
+    font-weight: 100;
+    color: #A2A2A2;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.connect-btn{
+    color: white;
+    background-color: #1B9772;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding: 25px 50px;
+    border: none;
+}
