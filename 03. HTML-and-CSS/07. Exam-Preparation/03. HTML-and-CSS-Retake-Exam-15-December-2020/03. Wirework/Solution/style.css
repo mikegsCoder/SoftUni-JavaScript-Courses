@@ -175,3 +175,23 @@ header {
     padding: 25px 50px;
     border: none;
 }
+
+.articles{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background-color: #383838;
+    padding: 120px 60px;
+}
+
+.articles-item{
+    width: 24%;
+    text-align: center;
+}
+
+.item-heading{
+    font-size: 35px;
+    font-weight: 100;
+}
