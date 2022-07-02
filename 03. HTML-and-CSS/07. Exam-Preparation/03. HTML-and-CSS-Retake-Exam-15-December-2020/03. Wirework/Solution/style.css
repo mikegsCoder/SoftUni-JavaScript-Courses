@@ -3,9 +3,7 @@
 body {
     font-family: "Helvetica", sans-serif;
     margin: 0;
-
     width: 1920px;
-    /* border: 1px solid black; */
 }
 
 html {
@@ -22,7 +20,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 50px;
-    /* vertical-align: middle; */
 }
 
 .logo {
@@ -31,11 +28,11 @@ header {
     gap: 50px;
 }
 
-.logo h1{
+.logo h1 {
     font-size: 50px;
 }
 
-.logo h1::after{
+.logo h1::after {
     content: '';
     background-color: #BBBBBB;
     height: 65px;
@@ -44,13 +41,12 @@ header {
     left: 360px;
 }
 
-.logo p{
+.logo p {
     font-size: 25px;
     margin-top: 62px;
-    /* vertical-align: middle; */
 }
 
-.navigation{
+.navigation {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -59,7 +55,7 @@ header {
     margin-right: 10px;
 }
 
-.nav-item a{
+.nav-item a {
     text-decoration: none;
     font-size: 25px;
     color: #23465F;
@@ -67,24 +63,22 @@ header {
     padding: 35px;
 }
 
-.nav-item:nth-child(1) a{
+.nav-item:nth-child(1) a {
     color: white;
     background-color: #E24E2A;
 }
 
-
-.img-wrapper{
+.img-wrapper {
     background-image: url("./images/banner.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-
     width: 100%;
     height: 670px;
     overflow: hidden;
 }
 
-.intro-text{
+.intro-text {
     font-size: 25px;
     text-align: center;
     line-height: 1.5;
@@ -93,12 +87,11 @@ header {
     background-color: #E24E2A;
 }
 
-.intro-text p a{
+.intro-text p a {
     color: white;
 }
 
-
-.services{
+.services {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -108,22 +101,21 @@ header {
     justify-content: space-between;
 }
 
-.service-card{
+.service-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
-   width: 24%;
+    width: 24%;
 }
 
-.service-card hr{
+.service-card hr {
     width: 100%;
     border: none;
     height: 2px;
-    /* color: #666360; */
     background-color: #666360;
 }
 
-.service-card i{
+.service-card i {
     font-size: 80px;
     padding: 35px;
     background-color: #E24E2A;
@@ -132,33 +124,34 @@ header {
     margin: 0 auto;
 }
 
-.service-card h3{
+.service-card h3 {
     text-align: center;
     font-size: 30px;
 }
 
 .service-card p,
-.item-text{
+.item-text {
     font-size: 23px;
     line-height: 1.7;
     text-align: center;
     color: #666360;
 }
-.connect{
+
+.connect {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px;
 }
 
-.connect-heading{
+.connect-heading {
     font-size: 55px;
     font-weight: 100;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
-.connect-subheading{
+.connect-subheading {
     font-size: 30px;
     font-weight: 100;
     color: #A2A2A2;
@@ -166,7 +159,7 @@ header {
     margin-bottom: 40px;
 }
 
-.connect-btn{
+.connect-btn {
     color: white;
     background-color: #1B9772;
     font-size: 25px;
@@ -176,7 +169,7 @@ header {
     border: none;
 }
 
-.articles{
+.articles {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -186,16 +179,17 @@ header {
     padding: 120px 60px;
 }
 
-.articles-item{
+.articles-item {
     width: 24%;
     text-align: center;
 }
 
-.item-heading{
+.item-heading {
     font-size: 35px;
     font-weight: 100;
 }
-footer{
+
+footer {
     text-align: center;
     font-size: 23px;
     padding: 100px;
@@ -203,7 +197,7 @@ footer{
     color: #58B397;
 }
 
-footer p a{
+footer p a {
     text-decoration: none;
     color: #9DD2C4;
 }
