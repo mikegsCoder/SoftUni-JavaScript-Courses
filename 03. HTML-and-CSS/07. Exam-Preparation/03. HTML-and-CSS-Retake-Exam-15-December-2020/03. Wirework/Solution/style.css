@@ -96,3 +96,51 @@ header {
 .intro-text p a{
     color: white;
 }
+
+
+.services{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 100px 40px;
+    color: white;
+    background-color: #383838;
+    justify-content: space-between;
+}
+
+.service-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   width: 24%;
+}
+
+.service-card hr{
+    width: 100%;
+    border: none;
+    height: 2px;
+    /* color: #666360; */
+    background-color: #666360;
+}
+
+.service-card i{
+    font-size: 80px;
+    padding: 35px;
+    background-color: #E24E2A;
+    text-align: center;
+    width: 38%;
+    margin: 0 auto;
+}
+
+.service-card h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.service-card p,
+.item-text{
+    font-size: 23px;
+    line-height: 1.7;
+    text-align: center;
+    color: #666360;
+}
