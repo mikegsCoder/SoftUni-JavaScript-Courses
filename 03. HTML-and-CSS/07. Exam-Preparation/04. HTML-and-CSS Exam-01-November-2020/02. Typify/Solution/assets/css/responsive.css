@@ -1,0 +1,51 @@
+@media screen and (max-width: 600px){
+    /* body{
+        background-color: red;
+    } */
+
+    body{
+        max-width: unset;
+        width: 100vw;
+        margin: 0;
+    }
+
+    .banner{
+        padding: 2em 0 2em 0;
+    }
+
+    .banner h2{
+        /* padding: 0; */
+        /* padding: unset; */
+        /* margin: 0; */
+        font-size: 2em;
+        width: 100%;
+        padding: 0.3em;
+    }
+
+    .banner .button.special{
+        width: 100vw;
+    }
+
+    .wrapper > .inner{
+        width: 100%;
+    }
+
+    .features{
+        flex-direction: column;
+    }
+    .feature{
+        width: 100%;
+    }
+
+    .wrapper > .inner.narrow{
+        width: 100%;
+    }
+
+    .grid-form {
+        flex-direction: column;
+    }
+
+    .grid-form .form-control.narrow{
+        width: 100%;
+    }
+}
