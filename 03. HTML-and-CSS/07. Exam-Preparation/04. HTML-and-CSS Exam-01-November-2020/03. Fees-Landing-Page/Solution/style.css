@@ -326,3 +326,12 @@ background: linear-gradient(90deg, rgba(40,21,84,0.9796188739167542) 0%, rgba(77
     text-decoration: none;
     color: black;
 }
+
+footer{
+    width: 100%;
+    background-color: #54546D;
+    padding: 30px;
+    font-size: 20px;
+    color: #8587AC;
+    text-align: center;
+}
