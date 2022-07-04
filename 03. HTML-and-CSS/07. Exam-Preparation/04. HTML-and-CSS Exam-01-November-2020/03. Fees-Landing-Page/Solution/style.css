@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+
+    width: 1920px;
+    /* border: 1px solid black; */
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+
+.logo-wrapper{
+    width: 160px;
+    height: 50px;
+    background-image: url("./images/creative-logo.svg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: #6C6E81;
+    font-weight: bold;
+    font-size: 18px;
+}
