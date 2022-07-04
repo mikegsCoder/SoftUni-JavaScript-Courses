@@ -50,3 +50,157 @@ header{
     font-weight: bold;
     font-size: 18px;
 }
+.fees{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #54546D;
+    height: 480px;
+}
+
+.fees-img-wrapper{
+    width: 210px;
+    height: 250px;
+    background-image: url("./images/calculator-icon.svg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -90px;
+    top: 200px;
+}
+
+.fees-heading{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    margin-top: 100px;
+}
+
+.fees-cards{
+    width: 100%;
+    padding-inline: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 20px; */
+    padding: 0 80px;
+}
+
+.fees-card{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 40px; */
+    margin-inline: 40px;
+    box-shadow: 0px 2px 10px -1px rgba(0,0,0,0.68);
+    border-radius: 10px;
+}
+
+.fees-card-description{
+    /* display: flex;
+    flex-direction: column; */
+    /* align-content: center; */
+    /* align-self: center; */
+    /* align-items: center; */
+    width: 100%;
+    height: 320px;
+    background-color: white;
+    font-size: 20px;
+    padding: 35px;
+    /* align-items: center; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #E0E0E0;
+
+}
+
+body > main > section > article.fees-cards > article:nth-child(1) > article.fees-card-description > h2{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+body > main > section > article.fees-cards > article:nth-child(1) > article.fees-card-description > p{
+    margin-top: 10px;
+}
+
+.fees-card-heading,
+.fees-card-content{
+    text-align: center;
+}
+
+.apply-btn{
+    color: white;
+    background-color: #9A5DC6;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 35px;
+    border: none;
+    border-radius: 30px;
+    margin: 50px 100px;
+    /* -webkit-box-shadow: 0px 2px 10px -1px rgba(0,0,0,0.68);  */
+    box-shadow: 0px 2px 10px -1px rgba(0,0,0,0.68);
+}
+
+.fees-card-price{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* border: 1px solid #E0E0E0; */
+    /* box-shadow: 0px 2px 10px -1px rgba(0,0,0,0.68); */
+
+}
+
+.fees-card:nth-child(1) .fees-card-price{
+    /* background-color: #43D079; */
+    color: white;
+    background: rgb(12,65,20);
+    background: linear-gradient(90deg, rgba(12,65,20,0.9796188739167542) 0%, rgba(50,135,70,1) 45%, rgba(129,212,135,1) 100%);
+}
+
+.fees-card .fees-card-price{
+    text-align: center;
+    height: 150px;
+}
+
+.fees-card .fees-card-price p{
+    font-size: 20px;
+}
+
+.fees-card:nth-child(2) .fees-card-price,
+.fees-card:nth-child(3) .fees-card-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 40px;
+    color: white;
+}
+
+.fees-card:nth-child(2) .fees-card-price{
+    /* background-color: #557FA6; */
+    background: rgb(26,32,71);
+    background: linear-gradient(90deg, rgba(26,32,71,0.9796188739167542) 0%, rgba(45,84,152,1) 45%, rgba(0,212,255,1) 100%);
+}
+
+.fees-card:nth-child(3) .fees-card-price{
+    /* background-color: #6857C0; */
+    background: rgb(40,21,84);
+background: linear-gradient(90deg, rgba(40,21,84,0.9796188739167542) 0%, rgba(77,45,150,1) 45%, rgba(131,89,196,1) 100%);
+}
+
+.fees-card:nth-child(2) .fees-card-price .fees-card-price-left h2::after{
+    content: '';
+    background-color: white;
+    height: 100px;
+    width: 2px;
+    position: absolute;
+    left: 975px;
+}
+
+.fees-card:nth-child(3) .fees-card-price .fees-card-price-left h2::after{
+    content: '';
+    background-color: white;
+    height: 100px;
+    width: 2px;
+    position: absolute;
+    left: 1550px;
+}
