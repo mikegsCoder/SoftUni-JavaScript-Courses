@@ -1,0 +1,19 @@
+/* TODO: Add media queries */
+@media screen and (max-width: 600px){
+    .thumbnails{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .thumbnails div{
+        width: 100%;
+        margin: 0 0 2em 0;
+        /* height: fit-content; */
+        /* background-size: cover;
+    background-repeat: no-repeat; */
+    }
+
+    .thumbnails div a img {
+        height: 300px;
+    }
+}
