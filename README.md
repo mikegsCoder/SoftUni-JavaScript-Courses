@@ -1,2 +1,2 @@
 # SoftUni-JavaScript-Courses
-Solutions for problems in SoftUni JavaScript courses
+Solutions for problems from SoftUni JavaScript and Front-End courses
