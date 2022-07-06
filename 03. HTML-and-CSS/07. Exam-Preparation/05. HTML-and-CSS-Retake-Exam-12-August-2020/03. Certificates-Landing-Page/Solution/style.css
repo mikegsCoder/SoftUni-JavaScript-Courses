@@ -255,3 +255,8 @@ header {
     left: 920px;
     /* margin-bottom: 20px; */
 }
+
+.row{
+    width: 1620px;
+    height: 3px;
+}
