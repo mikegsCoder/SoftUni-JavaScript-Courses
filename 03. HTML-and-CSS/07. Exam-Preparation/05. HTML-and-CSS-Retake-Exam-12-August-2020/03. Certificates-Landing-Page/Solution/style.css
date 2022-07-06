@@ -187,3 +187,71 @@ header {
     font-size: 21px;
 
 }
+
+.apply{
+    width: 100%;
+    padding-inline: 150px;
+    margin-bottom: 100px;
+}
+
+.apply-img-wrapper{
+    height: 350px;
+    background-image: url("./images/sign-up-prompt-background.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:darken;
+    background-color: rgba(0, 0, 0,0.5);
+    border-radius: 12px;
+    /* align-items: center; */
+    padding: 40px 300px;
+    color: white;
+    text-align: center;
+}
+
+.apply-heading{
+    font-size: 35px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+.apply-text{
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+.apply-btn{
+    font-size: 21px;
+    color: #42ABF8;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+.curriculum-btn{
+    font-size: 21px;
+    color: white;
+    background: transparent;
+    padding: 15px 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.apply-btn,
+.curriculum-btn{
+    margin-inline: 60px;
+}
+
+.actions{
+    margin-top: 60px;
+}
+
+.apply-btn::after{
+    content: '';
+    width: 2px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    left: 920px;
+    /* margin-bottom: 20px; */
+}
