@@ -260,3 +260,45 @@ header {
     width: 1620px;
     height: 3px;
 }
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 120px;
+}
+
+.footer-logo-wrapper {
+    width: 200px;
+    height: 50px;
+    background-image: url("./images/logo.svg");
+    background-position: center center;
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer-logo{
+    display: flex;
+    font-size: 20px;
+    color: #CBCBCB;
+}
+
+.copyright{
+    margin-top: 15px;
+}
+
+.footer-navigation{
+    list-style: none;
+    display: flex;
+    font-size: 21px;
+    /* color: black; */
+    gap: 20px;
+    margin-right: 40px;
+}
+
+.footer-nav-item a{
+    text-decoration: none;
+    color: black;
+}
