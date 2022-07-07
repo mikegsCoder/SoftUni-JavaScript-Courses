@@ -8,15 +8,13 @@ html {
     box-sizing: inherit;
 }
 
-body{
+body {
     font-family: "Lato", sans-serif;
     margin: 0;
-
     width: 1920px;
-    border: 1px solid black;
 }
 
-section{
+section {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -24,36 +22,35 @@ section{
     padding: 30px 200px;
 }
 
-.logo-wrapper{
+.logo-wrapper {
     padding-left: 10px;
 }
 
-.site-heading{
+.site-heading {
     font-size: 50px;
     font-weight: 100;
     margin-top: 0;
 }
 
-.site-content{
+.site-content {
     width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-.site-text{
-    /* width */
+.site-text {
     padding: 0 10px;
     margin: 0;
 }
 
-.text-heading{
+.text-heading {
     font-size: 30px;
     font-weight: 100;
     margin-top: 0;
 }
 
-.text-content{
+.text-content {
     font-size: 23px;
     font-weight: 100;
     line-height: 1.5;
@@ -61,7 +58,7 @@ section{
     letter-spacing: 1px;
 }
 
-.text-list{
+.text-list {
     list-style: none;
     font-size: 23px;
     padding-left: 0;
@@ -69,7 +66,7 @@ section{
     color: #626566;
 }
 
-.list-content{
+.list-content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -78,19 +75,19 @@ section{
 }
 
 .list-text h4,
-.list-text p{
+.list-text p {
     margin: 0 0 6px 0;
     padding: 0;
 }
 
-.list-content:nth-child(1){
+.list-content:nth-child(1) {
     margin-left: -6px;
 }
 
-.list-content:nth-child(3){
+.list-content:nth-child(3) {
     margin-left: -10px;
 }
 
-.site-img img{
+.site-img img {
     width: 710px;
 }
