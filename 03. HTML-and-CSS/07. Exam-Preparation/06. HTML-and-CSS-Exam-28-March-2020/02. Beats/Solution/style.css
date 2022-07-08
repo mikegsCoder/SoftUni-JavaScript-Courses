@@ -11,15 +11,11 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-
     width: 1920px;
-    border: 1px solid black;
 }
 
 header {
     width: 100%;
-
-
 }
 
 .navigation {
@@ -118,25 +114,24 @@ header {
     font-weight: bold;
 }
 
-.powerbeats-content{
+.powerbeats-content {
     font-size: 27px;
     margin-bottom: 0;
     margin-top: 7px;
 }
 
-.buy-now{
+.buy-now {
     display: flex;
     gap: 50px;
     margin-top: 130px;
-    /* flex-wrap: wrap; */
 }
 
-.price{
+.price {
     font-size: 60px;
     font-weight: bold;
 }
 
-.buy-btn{
+.buy-btn {
     background-color: #FF0000;
     color: white;
     border: none;
@@ -150,7 +145,7 @@ header {
     height: 80px;
 }
 
-.try-free{
+.try-free {
     width: 100%;
     height: 450px;
     background-color: #575757;
@@ -162,29 +157,27 @@ header {
     margin-bottom: -2px;
 }
 
-.try-heading{
-
+.try-heading {
     display: flex;
     align-items: center;
     gap: 40px;
-    /* margin: 0 auto; */
 }
 
-.try-heading{
+.try-heading {
     font-size: 55px;
     text-transform: uppercase;
     font-weight: 100;
 }
 
-.try-heading span{
+.try-heading span {
     font-weight: bold;
 }
 
-.try-action{
+.try-action {
     margin-top: 70px;
 }
 
-.try-action a{
+.try-action a {
     color: white;
     font-size: 50px;
     font-weight: bold;
@@ -192,16 +185,16 @@ header {
     text-decoration: none;
 }
 
-.life{
+.life {
     width: 100%;
     display: flex;
 }
 
-.life-img img{
+.life-img img {
     width: 960px;
 }
 
-.life-headphones{
+.life-headphones {
     width: 100%;
     display: flex;
     padding: 65px 45px;
@@ -209,16 +202,16 @@ header {
     height: 990px;
 }
 
-.life-headphones-text{
+.life-headphones-text {
     width: 65%;
     padding-left: 50px;
 }
 
-.life-headphones-img img{
+.life-headphones-img img {
     width: 320px;
 }
 
-.life-title{
+.life-title {
     font-size: 200px;
     text-transform: uppercase;
     font-weight: bold;
@@ -228,15 +221,28 @@ header {
     padding-bottom: 0;
 }
 
-.life-content{
+.life-content {
     font-size: 80px;
     font-weight: 100;
     letter-spacing: -6px;
     margin-top: 0px;
 }
 
-.life-content span{
+.life-content span {
     text-transform: uppercase;
     font-weight: bold;
     color: #FF0000;
+}
+
+footer {
+    width: 100%;
+    height: 145px;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: 100;
 }
