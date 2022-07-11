@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio&display=swap');
+@import url('https://use.fontawesome.com/releases/v6.1.1/css/all.css');
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Gelasio', serif;
+    margin: 0;
+
+    width: 1920px;
+    border: 1px solid black;
+}
+
+header {
+    height: 750px;
+    background-image: url('./images/map.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.logo-wrapper {
+    width: 65px;
+    height: 60px;
+    background-image: url("./images/logo.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-nav {
+    color: #CDCCCC;
+    margin: 0;
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.header-nav a {
+    color: #CDCCCC;
+    text-decoration: none;
+    font-weight: 100;
+}
