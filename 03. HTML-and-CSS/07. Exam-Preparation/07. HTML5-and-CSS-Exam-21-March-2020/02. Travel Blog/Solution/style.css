@@ -159,3 +159,29 @@ header {
     width: 960px;
     height: 385px;
 }
+
+footer{
+    width: 100%;
+    background-color: #8C8C8C;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+footer ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #CBCBCB;
+    font-size: 21px;
+    border-right: 1px solid #CBCBCB;
+    padding-right: 10px;
+}
+
+footer ul li:last-child a{
+    border: none;
+}
