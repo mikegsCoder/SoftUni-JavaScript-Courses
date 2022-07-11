@@ -57,3 +57,26 @@ header {
     text-decoration: none;
     font-weight: 100;
 }
+
+.site-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* vertical-align: middle; */
+}
+
+.site-title {
+    font-size: 95px;
+    margin-top: 310px;
+    text-shadow: 2px 2px 2px #000000;
+    margin-bottom: 0;
+}
+
+.start-btn {
+    color: white;
+    background-color: #146594;
+    border: none;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 4px;
+}
