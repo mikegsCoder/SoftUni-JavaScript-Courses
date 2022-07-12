@@ -1,17 +1,14 @@
-@media screen and (max-width:600px){
-    body{
-        /* background-color: red; */
-        /* border: 1px solid red; */
+@media screen and (max-width:600px) {
+    body {
         margin: 0;
     }
 
-    main{
+    main {
         width: 100%;
         overflow: hidden;
-
     }
 
-    .left-to-right:first-child{
+    .left-to-right:first-child {
         width: 100%;
         height: 600px;
         padding: unset;
@@ -19,55 +16,56 @@
         background-size: 960px 630px;
     }
 
-    main .left-to-right article{
+    main .left-to-right article {
         border-radius: 25%;
         width: 65vw;
         height: unset;
         margin: 45px auto;
         padding: 20px 40px;
         font-size: 1rem;
-
     }
 
     main .left-to-right article header,
-    main .left-to-right article p{
+    main .left-to-right article p {
         width: 65vw;
     }
 
-    button{
+    button {
         display: none;
     }
 
-    main section:nth-child(2), main section:nth-child(4){
+    main section:nth-child(2),
+    main section:nth-child(4) {
         flex-direction: column;
         width: 100%;
     }
-    
 
-    main section:nth-child(2) article{
+    main section:nth-child(2) article {
         padding-inline: 10%;
     }
 
-    main section:nth-child(2) article, main section:nth-child(4) article{
+    main section:nth-child(2) article,
+    main section:nth-child(4) article {
         margin: unset;
     }
 
-    section form label input, section form textarea{
+    section form label input,
+    section form textarea {
         margin-inline: 15vw;
         width: 70vw;
     }
 
-    body > main > section:nth-child(4) > article:nth-child(1) > form > label:nth-child(4){
+    body>main>section:nth-child(4)>article:nth-child(1)>form>label:nth-child(4) {
         width: 100vw;
     }
 
-    form input[type="submit"]{
+    form input[type="submit"] {
         position: relative;
         left: 50%;
         transform: translate(-50%);
     }
 
-    body > main > section:nth-child(4) > article:nth-child(2) > img{
+    body>main>section:nth-child(4)>article:nth-child(2)>img {
         width: 70%;
         margin: 0 auto;
     }
