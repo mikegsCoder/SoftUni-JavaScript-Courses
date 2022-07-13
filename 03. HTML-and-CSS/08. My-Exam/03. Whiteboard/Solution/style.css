@@ -9,29 +9,25 @@ html {
     box-sizing: inherit;
 }
 
-body{
+body {
     font-family: "PT Sans", sans-serif;
     margin: 0;
-
     width: 1920px;
     background-color: white;
-    /* border: 1px solid black; */
 }
 
-header{
-    /* border: 1px solid blue; */
-
+header {
     width: 90%;
     height: 750px;
     margin: 0 auto;
-    background: linear-gradient(180deg, rgba(0,0,0,0.6), rgba(133, 122, 109, 0.1)), url("./image/computer-main.jpg");
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(133, 122, 109, 0.1)), url("./image/computer-main.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     text-shadow: 1px 2px 2px #000000;
 }
 
-.header-navbar{
+.header-navbar {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -42,35 +38,33 @@ header{
     font-weight: 100;
 }
 
-.header-navbar i{
+.header-navbar i {
     font-size: 30px;
 }
 
-.header-text{
+.header-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
 }
 
-.header-heading{
+.header-heading {
     font-size: 75px;
     margin-top: 55px;
     margin-bottom: 10px;
-
 }
 
-.header-text-content{
+.header-text-content {
     font-size: 31px;
     text-align: center;
     width: 670px;
 }
 
-.header-button{
+.header-button {
     font-size: 27px;
     font-weight: bold;
     color: white;
-
     background-color: #00D08E;
     padding: 14px 30px;
     border: none;
@@ -78,14 +72,14 @@ header{
     margin-top: 65px;
 }
 
-.header-button:hover{
+.header-button:hover {
     cursor: pointer;
     background: transparent;
     padding: 10px 26px;
     border: 4px solid white;
 }
 
-.header-link{
+.header-link {
     text-decoration: none;
     color: white;
     font-size: 26px;
@@ -93,7 +87,7 @@ header{
     font-size: 30px;
 }
 
-.header-link i{
+.header-link i {
     text-shadow: none;
     color: black;
     font-size: 21px;
@@ -103,20 +97,17 @@ header{
     border-radius: 50%;
     margin-left: 7px;
     box-shadow: 1px 2px 2px #000000;
-
 }
 
 .intro,
-.about{
-    /* border: 1px solid blue; */
-
+.about {
     width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
 }
 
-.intro-img{
+.intro-img {
     width: 50%;
     height: 600px;
     background-image: url("./image/tablet.jpg");
@@ -125,49 +116,48 @@ header{
     background-repeat: no-repeat;
 }
 
-.intro-text{
+.intro-text {
     width: 50%;
     display: flex;
     flex-direction: column;
     padding-inline: 70px 120px;
 }
 
-.intro-heading{
+.intro-heading {
     font-size: 50px;
     margin-bottom: 0;
 }
 
-.intro-description{
+.intro-description {
     font-size: 30px;
     margin-top: 0;
 }
 
-.intro-list{
+.intro-list {
     list-style: none;
     font-size: 25px;
     padding-left: 0;
 }
 
-.intro-list-item{
+.intro-list-item {
     display: flex;
     flex-direction: row;
     margin-bottom: 27px;
 }
 
-.intro-list-item p{
+.intro-list-item p {
     margin: 0 0 0 40px;
     font-size: 28px;
 }
 
-.intro-list-item i{
-
+.intro-list-item i {
     color: white;
     background-color: #00D08E;
     padding: 5px 6px 0 6px;
     border-radius: 50%;
 }
 
-.about-text{
+.about-text {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -175,11 +165,11 @@ header{
 }
 
 .about-heading,
-.footer-heading{
+.footer-heading {
     font-size: 50px;
 }
 
-.about-row{
+.about-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -187,7 +177,7 @@ header{
     margin-top: 20px;
 }
 
-.about-img{
+.about-img {
     width: 50%;
     height: 600px;
     background-image: url("./image/pen.jpg");
@@ -196,30 +186,30 @@ header{
     background-repeat: no-repeat;
 }
 
-.about-card{
+.about-card {
     width: 200px;
 }
 
-.card-img-wrapper{
+.card-img-wrapper {
     width: 120px;
     height: 120px;
     overflow: hidden;
     margin: 0 auto;
 }
 
-.card-img-wrapper img{
+.card-img-wrapper img {
     width: 120px;
     height: 120px;
 }
 
-.card-title{
+.card-title {
     color: #15D292;
     text-align: center;
     font-size: 32px;
     margin-top: 5px;
 }
 
-footer{
+footer {
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -228,13 +218,13 @@ footer{
     background-color: #B2F1DD;
 }
 
-.footer-cards{
+.footer-cards {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.footer-cards-row{
+.footer-cards-row {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -242,7 +232,7 @@ footer{
     justify-content: space-between;
 }
 
-.footer-card{
+.footer-card {
     width: 29%;
     display: flex;
     flex-direction: column;
@@ -251,20 +241,20 @@ footer{
     font-size: 25px;
 }
 
-.footer-card-title{
+.footer-card-title {
     margin-bottom: 0;
 }
 
-.footer-card-content{
+.footer-card-content {
     margin-top: 10px;
 }
 
-.footer-link{
+.footer-link {
     font-size: 25px;
     margin-bottom: 50px;
 }
 
-.footer-link a{
+.footer-link a {
     text-decoration: none;
     color: black;
     font-weight: bold;
