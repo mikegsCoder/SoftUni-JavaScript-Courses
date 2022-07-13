@@ -218,3 +218,54 @@ header{
     font-size: 32px;
     margin-top: 5px;
 }
+
+footer{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #B2F1DD;
+}
+
+.footer-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-cards-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-inline: 100px;
+    justify-content: space-between;
+}
+
+.footer-card{
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+.footer-card-title{
+    margin-bottom: 0;
+}
+
+.footer-card-content{
+    margin-top: 10px;
+}
+
+.footer-link{
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.footer-link a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
