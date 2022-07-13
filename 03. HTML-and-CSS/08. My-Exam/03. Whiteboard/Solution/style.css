@@ -160,9 +160,61 @@ header{
 }
 
 .intro-list-item i{
-    
+
     color: white;
     background-color: #00D08E;
     padding: 5px 6px 0 6px;
     border-radius: 50%;
+}
+
+.about-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-heading,
+.footer-heading{
+    font-size: 50px;
+}
+
+.about-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.about-img{
+    width: 50%;
+    height: 600px;
+    background-image: url("./image/pen.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-card{
+    width: 200px;
+}
+
+.card-img-wrapper{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.card-img-wrapper img{
+    width: 120px;
+    height: 120px;
+}
+
+.card-title{
+    color: #15D292;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 5px;
 }
