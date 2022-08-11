@@ -1,6 +1,7 @@
 import { HeroSection } from './components/HeroSection'
 import { About } from './components/About'
 import { Service } from './components/Service'
+import { Portfolio } from './components/Portfolio'
 
 function App() {
     return (
@@ -8,6 +9,7 @@ function App() {
             <HeroSection />
             <About />
             <Service />
+            <Portfolio />
         </div>
     )
 }
