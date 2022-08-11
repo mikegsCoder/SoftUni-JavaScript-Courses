@@ -1,11 +1,11 @@
-
+import { HeroSection } from './components/HeroSection'
 
 function App() {
-  return (
-    <div>
-     
-    </div>
-  );
+    return (
+        <div>
+            <HeroSection />
+        </div>
+    )
 }
 
-export default App;
+export default App
