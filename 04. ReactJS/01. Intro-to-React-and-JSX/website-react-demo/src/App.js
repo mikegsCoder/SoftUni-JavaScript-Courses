@@ -4,6 +4,7 @@ import { Service } from './components/Service'
 import { Portfolio } from './components/Portfolio'
 import { News } from './components/News'
 import { Subscribe } from './components/Subscribe'
+import { Footer } from './components/Footer'
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Portfolio />
             <News />
             <Subscribe />
+            <Footer />
         </div>
     )
 }
