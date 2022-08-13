@@ -5,6 +5,7 @@ import logo from './logo.svg'
 import { Header } from './components/Header'
 import { Counter } from './components/Counter';
 import { Clicker } from './components/Clicker';
+import { Timer } from './components/Timer';
 
 function App() {
     const books = [
@@ -81,6 +82,7 @@ function App() {
                 </Header>
                 <Counter />
                 <Clicker />
+                <Timer start={1} />
 
                 <img src={logo} className="App-logo" alt="logo" />
             </header>
