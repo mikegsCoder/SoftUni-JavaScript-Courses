@@ -3,6 +3,7 @@ import './App.css'
 import React from 'react'
 import logo from './logo.svg'
 import { Header } from './components/Header'
+import { Counter } from './components/Counter';
 
 function App() {
     const books = [
@@ -77,6 +78,8 @@ function App() {
                 <Header>
                     <span className="fancy-font">Book</span> Library
                 </Header>
+                <Counter />
+
 
                 <img src={logo} className="App-logo" alt="logo" />
             </header>
