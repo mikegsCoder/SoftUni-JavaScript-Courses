@@ -3,9 +3,10 @@ import './App.css'
 import React from 'react'
 import logo from './logo.svg'
 import { Header } from './components/Header'
-import { Counter } from './components/Counter';
-import { Clicker } from './components/Clicker';
-import { Timer } from './components/Timer';
+import { Counter } from './components/Counter'
+import { Clicker } from './components/Clicker'
+import { Timer } from './components/Timer'
+import { BookList } from './components/BookList'
 
 function App() {
     const books = [
@@ -83,6 +84,7 @@ function App() {
                 <Counter />
                 <Clicker />
                 <Timer start={1} />
+                <BookList books={books} />
 
                 <img src={logo} className="App-logo" alt="logo" />
             </header>
