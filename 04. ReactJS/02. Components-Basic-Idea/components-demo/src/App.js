@@ -4,6 +4,7 @@ import React from 'react'
 import logo from './logo.svg'
 import { Header } from './components/Header'
 import { Counter } from './components/Counter';
+import { Clicker } from './components/Clicker';
 
 function App() {
     const books = [
@@ -79,7 +80,7 @@ function App() {
                     <span className="fancy-font">Book</span> Library
                 </Header>
                 <Counter />
-
+                <Clicker />
 
                 <img src={logo} className="App-logo" alt="logo" />
             </header>
