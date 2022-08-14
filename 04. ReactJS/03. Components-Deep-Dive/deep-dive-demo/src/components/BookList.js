@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Book } from "./Book";
 
 export const BookList = (props) => {
@@ -7,4 +6,4 @@ export const BookList = (props) => {
             {props.books.map((x, i) => <Book key={i} {...x} />)}
         </ul>
     );
-}
+};

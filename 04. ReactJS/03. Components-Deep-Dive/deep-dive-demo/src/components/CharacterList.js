@@ -14,9 +14,7 @@ export const CharacterList = () => {
     return (
         <ul>
             {!characters.length && <li>Loading...</li>}
-            {characters.map(x => (
-                <li key={x.name}>{x.name}</li>
-            ))}
+            {characters.map(x => (<li key={x.name}>{x.name}</li>))}
         </ul>
     );
-} 
+};

@@ -7,7 +7,7 @@ export const Book = (props) => {
     
     useEffect(() => {
         console.log('Mounting: ' + props.title);
-    }, [])
+    }, []);
 
     useEffect(() => {
         console.log('Updating: ' + props.title);
@@ -19,17 +19,17 @@ export const Book = (props) => {
 
     const deleteHandler = () => {
         setDeleted(true);
-    }
+    };
 
     let style = {};
 
     if (highlited) {
         style.backgroundColor = 'blue';
-    }
+    };
 
     if (deleted) {
         return <h2>Deleted</h2>
-    }
+    };
     
     return (
         <li style={style} className={styles['book-item']}>
@@ -45,4 +45,4 @@ export const Book = (props) => {
             </article>
         </li>
     );
-} 
+};
