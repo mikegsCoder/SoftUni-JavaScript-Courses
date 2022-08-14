@@ -1,7 +1,7 @@
 import './App.css';
 
 import { CharacterList } from './components/CharacterList';
-
+import { BookList } from './components/BookList';
 
 function App() {
     const books = [
@@ -20,8 +20,8 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-            <CharacterList />
-
+                <CharacterList />
+                <BookList books={books} />
             </header>
         </div>
     );
