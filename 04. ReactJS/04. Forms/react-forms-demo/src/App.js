@@ -1,5 +1,6 @@
-import { useState, useRef, useEffect } from 'react';
 import './App.css';
+
+import { useState, useRef, useEffect } from 'react';
 
 function App() {
     const infoRef = useRef();
@@ -18,7 +19,7 @@ function App() {
     useEffect(() => {
         if (values.username && values.age) {
             infoRef.current.value = `${values.username} - ${values.age}`;
-        }
+        };
     }, [values.username, values.age]);
 
     const changeHandler = (e) => {
@@ -30,10 +31,6 @@ function App() {
 
     const submitHandler = (e) => {
         e.preventDefault();
-
-        // let values = Object.fromEntries(new FormData(e.target))
-        // console.log(values);
-
         console.log(values);
     };
 
@@ -97,7 +94,6 @@ function App() {
 
                     <div>
                         <input type="submit" value="Register" disabled={!values.tac} />
-                        {/* <button type="submit">Login</button> */}
                     </div>
 
                     <div>
@@ -108,6 +104,6 @@ function App() {
             </header>
         </div>
     );
-}
+};
 
 export default App;
