@@ -44,8 +44,8 @@ export const UserDetails = ({
             </div>
         </div>
     );
-}
+};
 
 function printAddress(data) {
     return `${data.country}, ${data.city}, ${data.street} ${data.streetNumber}`;
-}
+};

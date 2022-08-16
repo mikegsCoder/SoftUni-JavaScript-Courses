@@ -38,7 +38,7 @@ export const UserCreate = ({
             ...state,
             [e.target.name]: values[e.target.name].length < bound,
         }));
-    }
+    };
 
     const isPositive = (e) => {
         let number = Number(e.target.value);
@@ -47,9 +47,9 @@ export const UserCreate = ({
             ...state,
             [e.target.name]: number < 0,
         }));
-    }
+    };
 
-    const isFormValid = !Object.values(errors).some(x => x)
+    const isFormValid = !Object.values(errors).some(x => x);
 
     return (
         <div className="overlay">

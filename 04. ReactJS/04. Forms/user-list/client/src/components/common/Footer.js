@@ -4,4 +4,4 @@ export const Footer = () => {
           <p>Copyright © designed by Mihail Valkov</p>
         </footer>
     );
-}
+};

@@ -1,9 +1,9 @@
-import './App.css'
+import './App.css';
 
-import { Header } from './components/common/Header'
-import { Footer } from './components/common/Footer'
-import { Search } from './components/search/Search'
-import { UserList } from './components/user-list/UserList'
+import { Header } from './components/common/Header';
+import { Footer } from './components/common/Footer';
+import { Search } from './components/search/Search';
+import { UserList } from './components/user-list/UserList';
 
 function App() {
     return (
@@ -20,7 +20,7 @@ function App() {
 
             <Footer />
         </div>
-    )
-}
+    );
+};
 
-export default App
+export default App;

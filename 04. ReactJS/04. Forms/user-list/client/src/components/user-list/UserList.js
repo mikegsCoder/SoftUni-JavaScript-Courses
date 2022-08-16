@@ -32,7 +32,7 @@ export const UserList = () => {
         setUserAction({
             action: UserActions.Add
         });
-    }
+    };
 
     const closeHandler = () => {
         setUserAction({ user: null, action: null });
@@ -47,7 +47,7 @@ export const UserList = () => {
             .catch(err => {
                 console.log(err);
             });
-    }
+    };
 
     return (
         <>

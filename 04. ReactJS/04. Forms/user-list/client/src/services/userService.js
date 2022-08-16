@@ -30,5 +30,5 @@ export const create = async (userData) => {
         return result.user;
     } else {
         throw { message: 'Unable to create user' };
-    }
-}
+    };
+};
