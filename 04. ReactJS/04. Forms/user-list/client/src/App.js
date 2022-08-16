@@ -1,7 +1,8 @@
-import './App.css';
+import './App.css'
 
-import { Header } from './components/common/Header';
-import { Footer } from './components/common/Footer';
+import { Header } from './components/common/Header'
+import { Footer } from './components/common/Footer'
+import { UserList } from './components/user-list/UserList'
 
 function App() {
     return (
@@ -10,13 +11,14 @@ function App() {
 
             <main className="main">
                 <section className="card users-container">
-
+                    
+                    <UserList />
                 </section>
             </main>
 
             <Footer />
         </div>
-    );
+    )
 }
 
-export default App;
+export default App
