@@ -8,6 +8,7 @@ import About from './components/About'
 import Pricing from './components/Pricing'
 import Contacts from './components/Contacts'
 import StarshipList from './components/StarshipList';
+import Starship from './components/Starship';
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/pricing/premium" element={<h2>Premium Pricing</h2>} />
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/starships" element={<StarshipList />} />
+                <Route path="/starships/:starshipId/*" element={<Starship />} />
 
             </Routes>
         </div>
