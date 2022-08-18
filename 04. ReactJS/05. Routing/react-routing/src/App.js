@@ -9,6 +9,7 @@ import Pricing from './components/Pricing'
 import Contacts from './components/Contacts'
 import StarshipList from './components/StarshipList';
 import Starship from './components/Starship';
+import NotFound from './components/NotFound';
 
 function App() {
     return (
@@ -25,7 +26,7 @@ function App() {
                 <Route path="/starships" element={<StarshipList />} />
                 <Route path="/starships/:starshipId/*" element={<Starship />} />
                 <Route path="/millennium-falcon" element={<Navigate to="/products/10" replace />} />
-
+                <Route path="*" element={<NotFound />} />
             </Routes>
         </div>
     )
