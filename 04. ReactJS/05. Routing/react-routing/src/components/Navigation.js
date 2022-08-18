@@ -19,9 +19,6 @@ export default function Navigation() {
                 <li>
                     <NavLink
                         to="/starships"
-                        // style={({isActive}) => ({
-                        //     background: isActive ? 'blue' : 'lightgray'
-                        // })}
                         className={setNavStyle}
                     >
                         Starships
@@ -33,4 +30,4 @@ export default function Navigation() {
             </ul>
         </nav>
     );
-}
+};

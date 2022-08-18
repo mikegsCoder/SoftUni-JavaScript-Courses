@@ -6,8 +6,6 @@ const Starship = () => {
     const [starship, setStarship] = useState({});
     const { starshipId } = useParams();
     const navigate = useNavigate();
-    // const location = useLocation();
-    // console.log(location);
 
     useEffect(() => {
         fetch(`https://swapi.dev/api/starships/${starshipId}/`)
@@ -21,7 +19,6 @@ const Starship = () => {
     }, [starshipId, navigate]);
 
     const nextProductHandler = () => {
-        // TODO: Redirect to next product
         navigate(`/starships/${Number(starshipId) + 1}`);
     };
 

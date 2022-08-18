@@ -15,10 +15,10 @@ const Film = ({
                 .then(result => {
                     setFilm(result);
                 })
-        }
+        };
     }, [films, filmId])
 
     return <h3>{film.title}</h3>
-}
+};
 
 export default Film;

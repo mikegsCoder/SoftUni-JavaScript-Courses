@@ -1,12 +1,12 @@
-import './App.css'
+import './App.css';
 
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom';
 
-import Navigation from './components/Navigation'
-import Home from './components/Home'
-import About from './components/About'
-import Pricing from './components/Pricing'
-import Contacts from './components/Contacts'
+import Navigation from './components/Navigation';
+import Home from './components/Home';
+import About from './components/About';
+import Pricing from './components/Pricing';
+import Contacts from './components/Contacts';
 import StarshipList from './components/StarshipList';
 import Starship from './components/Starship';
 import NotFound from './components/NotFound';
@@ -29,7 +29,7 @@ function App() {
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </div>
-    )
-}
+    );
+};
 
-export default App
+export default App;
