@@ -7,10 +7,13 @@ import * as gameService from './services/gameService'
 import { AuthContext } from './contexts/AuthContext'
 import { GameContext } from './contexts/GameContext'
 
+import Header from './components/Header/Header';
+
 function App() {
     return (
         <AuthContext.Provider value={{ user: auth, userLogin, userLogout }}>
             <div id="box">
+                <Header />
                 <GameContext.Provider value={{ games, gameAdd, gameEdit }}>
                     <main id="main-content">
                         
