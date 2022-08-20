@@ -8,6 +8,7 @@ import { AuthContext } from './contexts/AuthContext'
 import { GameContext } from './contexts/GameContext'
 
 import Header from './components/Header/Header';
+import Home from './components/Home';
 
 function App() {
     const [games, setGames] = useState([]);
@@ -63,6 +64,7 @@ function App() {
                 <GameContext.Provider value={{ games, gameAdd, gameEdit }}>
                     <main id="main-content">
                         <Routes>
+                            <Route path="/" element={<Home games={games} />} />
                             
                         </Routes>
                     </main>
