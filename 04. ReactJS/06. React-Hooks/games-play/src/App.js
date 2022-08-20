@@ -55,14 +55,16 @@ function App() {
                 setGames(result);
             });
     }, []);
-    
+
     return (
         <AuthContext.Provider value={{ user: auth, userLogin, userLogout }}>
             <div id="box">
                 <Header />
                 <GameContext.Provider value={{ games, gameAdd, gameEdit }}>
                     <main id="main-content">
-                        
+                        <Routes>
+                            
+                        </Routes>
                     </main>
                 </GameContext.Provider>
             </div>
