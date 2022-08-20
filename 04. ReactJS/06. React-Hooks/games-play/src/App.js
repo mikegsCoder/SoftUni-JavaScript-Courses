@@ -9,6 +9,7 @@ import { GameContext } from './contexts/GameContext'
 
 import Header from './components/Header/Header';
 import Home from './components/Home';
+import Login from './components/Login/Login';
 
 function App() {
     const [games, setGames] = useState([]);
@@ -65,6 +66,7 @@ function App() {
                     <main id="main-content">
                         <Routes>
                             <Route path="/" element={<Home games={games} />} />
+                            <Route path="/login" element={<Login />} />
                             
                         </Routes>
                     </main>
