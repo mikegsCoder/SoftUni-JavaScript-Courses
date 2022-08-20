@@ -11,6 +11,8 @@ import Header from './components/Header/Header';
 import Home from './components/Home';
 import Login from './components/Login/Login';
 
+const Register = lazy(() => import('./components/Register/Register'));
+
 function App() {
     const [games, setGames] = useState([]);
     const [auth, setAuth] = useLocalStorage('auth', {});
@@ -67,6 +69,11 @@ function App() {
                         <Routes>
                             <Route path="/" element={<Home games={games} />} />
                             <Route path="/login" element={<Login />} />
+                            <Route path="/register" element={
+                                <Suspense fallback={<span>Loading....</span>}>
+                                    <Register />
+                                </Suspense>
+                            } />
                             
                         </Routes>
                     </main>
