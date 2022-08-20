@@ -10,6 +10,7 @@ import { GameContext } from './contexts/GameContext'
 import Header from './components/Header/Header';
 import Home from './components/Home';
 import Login from './components/Login/Login';
+import Logout from './components/Logout/Logout';
 
 const Register = lazy(() => import('./components/Register/Register'));
 
@@ -74,7 +75,8 @@ function App() {
                                     <Register />
                                 </Suspense>
                             } />
-                            
+                            <Route path="/logout" element={<Logout />} />
+
                         </Routes>
                     </main>
                 </GameContext.Provider>
