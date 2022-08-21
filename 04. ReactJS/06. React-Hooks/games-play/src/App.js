@@ -13,6 +13,7 @@ import Login from './components/Login/Login';
 import Logout from './components/Logout/Logout';
 import CreateGame from './components/CreateGame/CreateGame';
 import EditGame from './components/EditGame/EditGame';
+import Catalog from './components/Catalog/Catalog';
 
 const Register = lazy(() => import('./components/Register/Register'));
 
@@ -80,6 +81,7 @@ function App() {
                             <Route path="/logout" element={<Logout />} />
                             <Route path="/create" element={<CreateGame />} />
                             <Route path="/games/:gameId/edit" element={<EditGame />} />
+                            <Route path="/catalog" element={<Catalog games={games} />} />
 
                         </Routes>
                     </main>
