@@ -27,7 +27,7 @@ const Register = () => {
                 userLogin(authData);
                 navigate('/');
             });
-    }
+    };
 
     return (
         <section id="register-page" className="content auth">

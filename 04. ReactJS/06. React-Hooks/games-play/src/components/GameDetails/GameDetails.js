@@ -24,7 +24,7 @@ const GameDetails = ({
             .then(result => {
                 setCurrentGame(result);
             });
-    })
+    });
 
     const addCommentHandler = (e) => {
         e.preventDefault();
@@ -32,7 +32,7 @@ const GameDetails = ({
         const result = `${comment.username}: ${comment.comment}`;
 
         addComment(gameId, result);
-    }
+    };
 
     const onChange = (e) => {
         setComment(state => ({
@@ -49,13 +49,13 @@ const GameDetails = ({
           errorMessage = 'Username must be longer than 4 characters';
         } else if ( username.length > 10) {
             errorMessage = 'Username must be shorter than 10 characters';
-        }
+        };
 
         setError(state => ({
             ...state,
             username: errorMessage,
         }));
-    }
+    };
 
     return (
         <section id="game-details">

@@ -19,6 +19,6 @@ const Home = ({ games }) => {
             </div>
         </section>
     );
-}
+};
 
 export default Home;

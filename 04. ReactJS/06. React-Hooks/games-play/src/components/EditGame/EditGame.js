@@ -14,8 +14,8 @@ const EditGame = () => {
         gameService.getOne(gameId)
             .then(gameData => {
                 setCurrentGame(gameData);
-            })
-    }, [])
+            });
+    }, []);
 
     const onSubmit = (e) => {
         e.preventDefault();
@@ -25,7 +25,7 @@ const EditGame = () => {
         gameService.edit(gameId, gameData)
             .then(result => {
                 gameEdit(gameId, result);
-                navigate(`/catalog/${gameId}`)
+                navigate(`/catalog/${gameId}`);
             });
     };
 
@@ -55,6 +55,6 @@ const EditGame = () => {
             </form>
         </section>
     );
-}
+};
 
 export default EditGame;

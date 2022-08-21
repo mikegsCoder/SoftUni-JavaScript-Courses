@@ -1,11 +1,11 @@
-import './App.css'
+import './App.css';
 
-import { useEffect, useState, lazy, Suspense } from 'react'
-import { Routes, Route, useNavigate } from 'react-router-dom'
+import { useEffect, useState, lazy, Suspense } from 'react';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 
-import * as gameService from './services/gameService'
-import { AuthContext } from './contexts/AuthContext'
-import { GameContext } from './contexts/GameContext'
+import * as gameService from './services/gameService';
+import { AuthContext } from './contexts/AuthContext';
+import { GameContext } from './contexts/GameContext';
 
 import Header from './components/Header/Header';
 import Home from './components/Home';
@@ -56,7 +56,7 @@ function App() {
 
     const gameEdit = (gameId, gameData) => {
         setGames(state => state.map(x => x._id === gameId ? gameData : x));
-    }
+    };
 
     useEffect(() => {
         gameService.getAll()
@@ -84,13 +84,12 @@ function App() {
                             <Route path="/games/:gameId/edit" element={<EditGame />} />
                             <Route path="/catalog" element={<Catalog games={games} />} />
                             <Route path="/catalog/:gameId" element={<GameDetails games={games} addComment={addComment} />} />
-
                         </Routes>
                     </main>
                 </GameContext.Provider>
             </div>
         </AuthContext.Provider>
-    )
-}
+    );
+};
 
-export default App
+export default App;
