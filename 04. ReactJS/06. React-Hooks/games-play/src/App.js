@@ -11,6 +11,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home';
 import Login from './components/Login/Login';
 import Logout from './components/Logout/Logout';
+import CreateGame from './components/CreateGame/CreateGame';
 
 const Register = lazy(() => import('./components/Register/Register'));
 
@@ -76,6 +77,7 @@ function App() {
                                 </Suspense>
                             } />
                             <Route path="/logout" element={<Logout />} />
+                            <Route path="/create" element={<CreateGame />} />
 
                         </Routes>
                     </main>
