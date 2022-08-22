@@ -1,6 +1,6 @@
-import { Component } from "react";
 import styles from './TaskItem.module.css';
 
+import { Component } from "react";
 import { TaskContext } from '../contexts/TaskContext';
 
 class TaskItem extends Component {
@@ -20,12 +20,11 @@ class TaskItem extends Component {
                                 x
                             </button>
                         </li>
-                     
                     </>
-                }
+                };
             </TaskContext.Consumer>
         );
-    }
-}
+    };
+};
 
 export default TaskItem;

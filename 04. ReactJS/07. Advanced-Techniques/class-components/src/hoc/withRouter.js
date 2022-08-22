@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom";
 
 const withRouter = (Component) => {
     const RouterWrapper = (props) => {

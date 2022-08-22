@@ -19,7 +19,7 @@ class TaskList extends Component {
         };
 
         this.newTaskChangeHandler = this.newTaskChangeHandler.bind(this);
-    }
+    };
 
     componentDidMount() {
         fetch(`https://swapi.dev/api/people/4`)
@@ -27,15 +27,15 @@ class TaskList extends Component {
             .then(result => {
                 this.setState({ character: result });
             });
-    }
+    };
 
     componentDidUpdate() {
         // console.log('Did update');
-    }
+    };
 
     newTaskChangeHandler(e) {
         this.setState({ newTask: e.target.value });
-    }
+    };
 
     addNewTaskHandler(e) {
         e.preventDefault();
@@ -44,21 +44,21 @@ class TaskList extends Component {
             tasks: [...state.tasks, { title: state.newTask, isCompleted: false }],
             newTask: '',
         }));
-    }
+    };
 
     taskClickHandler(taskTitle) {
         this.setState(state => ({
             tasks: state.tasks.map(x => x.title === taskTitle ? { ...x, isCompleted: !x.isCompleted } : x)
         }));
-    }
+    };
 
     taskDeleteHandler(e, taskTitle) {
         e.stopPropagation();
 
         this.setState(state => ({
             tasks: state.tasks.filter(x => x.title !== taskTitle)
-        }))
-    }
+        }));
+    };
 
     render() {
         return (
@@ -90,7 +90,7 @@ class TaskList extends Component {
                 </form>
             </TaskContext.Provider>
         );
-    }
-}
+    };
+};
 
 export default withRouter(TaskList);

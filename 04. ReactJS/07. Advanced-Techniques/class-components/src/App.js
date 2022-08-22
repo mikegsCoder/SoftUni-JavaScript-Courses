@@ -1,7 +1,7 @@
-import './App.css'
+import './App.css';
 
-import { Component } from 'react'
-import TaskList from './components/TaskList'
+import { Component } from 'react';
+import TaskList from './components/TaskList';
 
 class App extends Component {
     render() {
@@ -12,8 +12,8 @@ class App extends Component {
                     <TaskList />
                 </main>
             </div>
-        )
-    }
-}
+        );
+    };
+};
 
-export default App
+export default App;
