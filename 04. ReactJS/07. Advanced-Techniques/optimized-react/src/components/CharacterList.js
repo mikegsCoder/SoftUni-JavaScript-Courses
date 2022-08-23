@@ -1,4 +1,5 @@
 import { useState, useCallback, useMemo } from "react";
+
 import CharacterItem from "./CharacterItem";
 
 function wait(ms) {
@@ -6,8 +7,8 @@ function wait(ms) {
         now = start;
     while (now - start < ms) {
         now = Date.now();
-    }
-}
+    };
+};
 
 const CharacterList = ({
     characters,
