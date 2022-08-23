@@ -1,6 +1,8 @@
 import './App.css';
 import { useEffect, useState } from "react";
 
+import CharacterList from './components/CharacterList';
+
 function App() {
     const [characters, setCharacters] = useState([]);
 
@@ -11,10 +13,11 @@ function App() {
           setCharacters(result.results);
         })
     }, []);
-    
+
   return (
     <div className="App">
       <header className="App-header">
+        <CharacterList characters={characters} />
 
       </header>
     </div>
