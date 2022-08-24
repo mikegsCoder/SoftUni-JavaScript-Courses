@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+    width: 1920px;
+    border: 1px solid black;
+}
+
+.restaurant{
+    width: 100%;
+    background-color: #FFD9B0;
+    padding: 40px 230px 143px 230px;
+}
+
+.restaurant-card{
+    border: 1px solid black;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.restaurant-img{
+    width: 800px;
+    height: 830px;
+    background-image: url("./form-img.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.restaurant-text{
+    
+    color: white;
+    background-color: black;
+    width: 670px;
+    padding: 100px;
+}
+
+.text-heading{
+    margin: 0;
+    text-align: center;
+    /* padding-top: 100px; */
+    margin-bottom: 20px;
+}
+
+.restaurant-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant-form input{
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-top: 50px;
+    border-bottom: 1px solid #848484;
+}
+
+.book-btn{
+    color: white;
+    background-color: #EDB77D;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 35px;
+    border-radius: 8px;
+    width: 200px;
+
+}
