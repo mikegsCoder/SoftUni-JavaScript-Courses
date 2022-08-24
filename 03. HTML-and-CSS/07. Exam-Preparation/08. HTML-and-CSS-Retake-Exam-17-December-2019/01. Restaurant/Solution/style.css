@@ -8,28 +8,27 @@ html {
     box-sizing: inherit;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-
     width: 1920px;
     border: 1px solid black;
 }
 
-.restaurant{
+.restaurant {
     width: 100%;
     background-color: #FFD9B0;
     padding: 40px 230px 143px 230px;
 }
 
-.restaurant-card{
+.restaurant-card {
     border: 1px solid black;
     display: flex;
     border-radius: 15px;
     overflow: hidden;
 }
 
-.restaurant-img{
+.restaurant-img {
     width: 800px;
     height: 830px;
     background-image: url("./form-img.jpg");
@@ -38,38 +37,35 @@ body{
     background-repeat: no-repeat;
 }
 
-.restaurant-text{
-    
+.restaurant-text {
     color: white;
     background-color: black;
     width: 670px;
     padding: 100px;
 }
 
-.text-heading{
+.text-heading {
     margin: 0;
     text-align: center;
-    /* padding-top: 100px; */
     margin-bottom: 20px;
 }
 
-.restaurant-form{
+.restaurant-form {
     display: flex;
     flex-direction: column;
 }
 
-.restaurant-form input{
+.restaurant-form input {
     color: white;
     background-color: black;
     border: none;
     font-size: 18px;
     font-weight: bold;
-
     margin-top: 50px;
     border-bottom: 1px solid #848484;
 }
 
-.book-btn{
+.book-btn {
     color: white;
     background-color: #EDB77D;
     font-size: 18px;
@@ -78,5 +74,4 @@ body{
     margin-top: 35px;
     border-radius: 8px;
     width: 200px;
-
 }
