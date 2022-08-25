@@ -220,3 +220,34 @@ main{
     border: none;
     padding: 10px 100px;
 }
+
+.footer{
+    margin-top: 43px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #E1E0DC;
+    opacity: 0.9;
+    padding: 60px;
+}
+
+.footer ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #272825;
+}
+
+.footer ul li{
+    border-right: 1px solid #272825;
+    padding-right: 10px;
+}
+
+.footer ul li:last-child{
+    border: none;
+}
