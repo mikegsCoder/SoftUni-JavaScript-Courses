@@ -142,3 +142,30 @@ main{
     font-size: 50px;
     padding-top: 250px;
 }
+.coctails-subtitle,
+.cookies-subtitle{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.coctails-btn{
+    color: #E6E3DE;
+    background-color: #554938;
+    border: none;
+    font-size: 16px;
+    padding: 12px 17px;
+}
+
+.cookies-img{
+    height: 630px;
+    width: 60%;
+    background-image: url("./Media/cookies.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.cookies{
+    margin-top: 55px;
+}
