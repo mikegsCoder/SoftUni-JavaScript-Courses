@@ -1,3 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Gelasio&display=swap');
 @import url('https://use.fontawesome.com/releases/v6.1.1/css/all.css');
 
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Gelasio', serif;
+    margin: 0;
+
+    width: 1920px;
+    /* border: 1px solid black; */
+}
+
+header .navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #E6E3DE;
+    color: #554938;
+}
+
+.header-left{
+    margin: 5px 0;
+}
+
+.header-center{
+    display: flex;
+    gap:40px;
+    list-style: none;
+    margin: 10px 0;
+    padding-left: 0;
+}
+
+.header-center-item a{
+    text-decoration: none;
+    color: #554938;
+    font-size: 23px;
+}
+
+.header-right{
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.login-btn{
+    font-size: 15px;
+    background-color: #554938;
+    color:#E6E3DE;
+    padding:8px 10px;
+    margin-right: 32px;
+}
+
+.search{
+    width: 100%;
+    height: 600px;
+    background-image: url("./Media/craving.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* vertical-align: middle; */
+}
+
+.search-title{
+    margin: 0;
+    color: white;
+    font-size: 50px;
+    padding-top: 180px;
+    margin-bottom: 10px;
+}
+
+.search-field input{
+    background-color: #E6E3DE;
+    opacity: 0.6;
+    font-size: 35px;
+    border: none;
+}
+
+.search-field i{
+    color: #554938;
+    font-size: 20px;
+    position: relative;
+    left: -430px;
+    top: -6px;
+}
