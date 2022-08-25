@@ -169,3 +169,54 @@ main{
 .cookies{
     margin-top: 55px;
 }
+
+.toolbox{
+    margin-top: 10px;
+    /* border: 1px solid black; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toolbox-title{
+    font-size: 30px;
+    background-color: #DCDDDB;
+    padding: 10px 50px;
+    opacity: 0.8;
+}
+
+.toolbox-cards{
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+}
+
+.card-img{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.card-img img{
+    width: 250px;
+    height: 250px;
+}
+
+.card-text{
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    background-color: #DCDDDB;
+    margin-top: 0;
+    padding:15px;
+    opacity: 0.8;
+}
+
+.toolbox-btn{
+    color: white;
+    font-weight: bold;
+    background-color: #DA4D35;
+    border: none;
+    padding: 10px 100px;
+}
