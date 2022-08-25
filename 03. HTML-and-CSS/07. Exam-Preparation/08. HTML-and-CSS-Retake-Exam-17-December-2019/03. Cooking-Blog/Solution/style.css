@@ -93,3 +93,52 @@ header .navbar{
     left: -430px;
     top: -6px;
 }
+
+main{
+    width: 100%;
+    height: 2150px;
+    background-image: url("./Media/background.jpg");
+    background-position: center;
+    /* background-size:cover; */
+    background-size: 3800px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.coctails,
+.cookies{
+    margin-top: 130px;
+    /* border: 1px solid black; */
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.coctals-img{
+    height: 630px;
+    width: 60%;
+    background-image: url("./Media/cocktails.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.coctails-text,
+.cookies-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E6E3DE;
+    /* vertical-align: middle; */
+}
+
+.coctails-title,
+.cookies-title{
+    margin: 0;
+    font-size: 50px;
+    padding-top: 250px;
+}
