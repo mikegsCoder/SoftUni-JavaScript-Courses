@@ -9,15 +9,13 @@ html {
     box-sizing: inherit;
 }
 
-body{
+body {
     font-family: 'Gelasio', serif;
     margin: 0;
-
     width: 1920px;
-    /* border: 1px solid black; */
 }
 
-header .navbar{
+header .navbar {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -27,38 +25,38 @@ header .navbar{
     color: #554938;
 }
 
-.header-left{
+.header-left {
     margin: 5px 0;
 }
 
-.header-center{
+.header-center {
     display: flex;
-    gap:40px;
+    gap: 40px;
     list-style: none;
     margin: 10px 0;
     padding-left: 0;
 }
 
-.header-center-item a{
+.header-center-item a {
     text-decoration: none;
     color: #554938;
     font-size: 23px;
 }
 
-.header-right{
+.header-right {
     font-size: 19px;
     margin-top: 10px;
 }
 
-.login-btn{
+.login-btn {
     font-size: 15px;
     background-color: #554938;
-    color:#E6E3DE;
-    padding:8px 10px;
+    color: #E6E3DE;
+    padding: 8px 10px;
     margin-right: 32px;
 }
 
-.search{
+.search {
     width: 100%;
     height: 600px;
     background-image: url("./Media/craving.jpg");
@@ -68,10 +66,9 @@ header .navbar{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* vertical-align: middle; */
 }
 
-.search-title{
+.search-title {
     margin: 0;
     color: white;
     font-size: 50px;
@@ -79,14 +76,14 @@ header .navbar{
     margin-bottom: 10px;
 }
 
-.search-field input{
+.search-field input {
     background-color: #E6E3DE;
     opacity: 0.6;
     font-size: 35px;
     border: none;
 }
 
-.search-field i{
+.search-field i {
     color: #554938;
     font-size: 20px;
     position: relative;
@@ -94,30 +91,27 @@ header .navbar{
     top: -6px;
 }
 
-main{
+main {
     width: 100%;
     height: 2150px;
     background-image: url("./Media/background.jpg");
     background-position: center;
-    /* background-size:cover; */
     background-size: 3800px;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-around; */
 }
 
 .coctails,
-.cookies{
+.cookies {
     margin-top: 130px;
-    /* border: 1px solid black; */
     width: 80%;
     display: flex;
     flex-direction: row;
 }
 
-.coctals-img{
+.coctals-img {
     height: 630px;
     width: 60%;
     background-image: url("./Media/cocktails.jpg");
@@ -127,29 +121,29 @@ main{
 }
 
 .coctails-text,
-.cookies-text{
+.cookies-text {
     width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #E6E3DE;
-    /* vertical-align: middle; */
 }
 
 .coctails-title,
-.cookies-title{
+.cookies-title {
     margin: 0;
     font-size: 50px;
     padding-top: 250px;
 }
+
 .coctails-subtitle,
-.cookies-subtitle{
+.cookies-subtitle {
     font-size: 35px;
     text-align: center;
     margin-top: 10px;
 }
 
-.coctails-btn{
+.coctails-btn {
     color: #E6E3DE;
     background-color: #554938;
     border: none;
@@ -157,7 +151,7 @@ main{
     padding: 12px 17px;
 }
 
-.cookies-img{
+.cookies-img {
     height: 630px;
     width: 60%;
     background-image: url("./Media/cookies.jpg");
@@ -166,54 +160,53 @@ main{
     background-repeat: no-repeat
 }
 
-.cookies{
+.cookies {
     margin-top: 55px;
 }
 
-.toolbox{
+.toolbox {
     margin-top: 10px;
-    /* border: 1px solid black; */
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.toolbox-title{
+.toolbox-title {
     font-size: 30px;
     background-color: #DCDDDB;
     padding: 10px 50px;
     opacity: 0.8;
 }
 
-.toolbox-cards{
+.toolbox-cards {
     display: flex;
     justify-content: space-around;
     gap: 80px;
 }
 
-.card-img{
+.card-img {
     width: 250px;
     height: 250px;
     overflow: hidden;
 }
 
-.card-img img{
+.card-img img {
     width: 250px;
     height: 250px;
 }
 
-.card-text{
+.card-text {
     text-align: center;
     font-size: 22px;
     font-style: italic;
     background-color: #DCDDDB;
     margin-top: 0;
-    padding:15px;
+    padding: 15px;
     opacity: 0.8;
 }
 
-.toolbox-btn{
+.toolbox-btn {
     color: white;
     font-weight: bold;
     background-color: #DA4D35;
@@ -221,7 +214,7 @@ main{
     padding: 10px 100px;
 }
 
-.footer{
+.footer {
     margin-top: 43px;
     width: 100%;
     display: flex;
@@ -231,23 +224,23 @@ main{
     padding: 60px;
 }
 
-.footer ul{
+.footer ul {
     display: flex;
     gap: 30px;
     list-style: none;
 }
 
-.footer ul li a{
+.footer ul li a {
     text-decoration: none;
     font-size: 20px;
     color: #272825;
 }
 
-.footer ul li{
+.footer ul li {
     border-right: 1px solid #272825;
     padding-right: 10px;
 }
 
-.footer ul li:last-child{
+.footer ul li:last-child {
     border: none;
 }
