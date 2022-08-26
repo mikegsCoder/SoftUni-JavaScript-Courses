@@ -44,3 +44,38 @@ section{
     margin: 0 0 15px 20px;
     letter-spacing: 2px;
 }
+
+.content{
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    padding: 40px 55px 70px 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.planet-card{
+    width: 35.5%;
+    border: 1px solid black;
+    display: flex;
+
+    flex-direction: column;
+    padding: 10px 20px;
+    height: 450px;
+}
+
+.img-wrapper{
+    
+    width: 300px;
+    height: 300px;
+    background-image: url("./Earth.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-text{
+    margin-top: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
