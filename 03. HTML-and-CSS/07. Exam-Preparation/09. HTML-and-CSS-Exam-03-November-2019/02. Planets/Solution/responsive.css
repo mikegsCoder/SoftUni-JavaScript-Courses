@@ -1,43 +1,40 @@
-@media screen and (max-width: 1000px){
-    /* body{
-        background-color: red;
-    } */
-
+@media screen and (max-width: 1000px) {
     .primary,
     main,
-    .pair{
+    .pair {
         display: flex;
         flex-direction: column;
     }
 
-    .planet{
+    .planet {
         width: 90%;
     }
 
-    .news{
+    .news {
         width: 103%;
     }
 
-    footer nav{
+    footer nav {
         flex-direction: column;
     }
 
-    .primary header nav a, .primary footer nav a{
+    .primary header nav a,
+    .primary footer nav a {
         border: none !important;
     }
 }
 
-@media screen and (max-width: 850px){
-    .planet{
+@media screen and (max-width: 850px) {
+    .planet {
         width: 60%;
     }
 
-    .pair{
+    .pair {
         align-items: center;
     }
 
     .news ul,
-    .news ul li{
+    .news ul li {
         display: flex;
         flex-direction: column;
         align-items: center;
