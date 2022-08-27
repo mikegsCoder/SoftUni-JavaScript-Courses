@@ -1,0 +1,28 @@
+@media screen and (max-width: 1000px){
+    /* body{
+        background-color: red;
+    } */
+
+    .primary,
+    main,
+    .pair{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .planet{
+        width: 90%;
+    }
+
+    .news{
+        width: 103%;
+    }
+
+    footer nav{
+        flex-direction: column;
+    }
+
+    .primary header nav a, .primary footer nav a{
+        border: none !important;
+    }
+}
