@@ -9,15 +9,14 @@ html {
     box-sizing: inherit;
 }
 
-body{
+body {
     font-family: 'Noto Sans', sans-serif;
     margin: 0;
-
     width: 1920px;
     border: 1px solid black;
 }
 
-header{
+header {
     width: 100%;
     background-color: #F93700;
     color: white;
@@ -28,51 +27,49 @@ header{
     align-items: center;
 }
 
-.header-nav{
+.header-nav {
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 45px;
-    /* margin-left: 0; */
     padding-left: 0;
     font-size: 24px;
 }
 
-.header-nav-item a{
+.header-nav-item a {
     color: white;
     text-decoration: none;
 }
 
-.search input{
+.search input {
     font-size: 18px;
     padding: 15px;
     width: 550px;
 }
 
-.search i{
+.search i {
     background-color: #B6AFAF;
     font-size: 17px;
     padding: 19px 40px;
     position: relative;
     left: -4px;
-    /* top: -1px; */
 }
 
-.account{
+.account {
     font-size: 24px;
 }
 
-.account a{
+.account a {
     color: white;
     text-decoration: none;
     margin-left: 18px;
 }
 
-main{
+main {
     background-color: #F0E4E4;
 }
 
-.rooms{
+.rooms {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -80,36 +77,36 @@ main{
     justify-content: space-between;
 }
 
-.card-img-wrapper{
+.card-img-wrapper {
     width: 370px;
     height: 370px;
     overflow: hidden;
 }
 
-.card-img-wrapper img{
+.card-img-wrapper img {
     width: 370px;
     height: 370px;
 }
 
-.card-text{
+.card-text {
     font-size: 25px;
     text-align: center;
     color: #7A7F87;
     margin-top: 15px;
 }
 
-.collection{
+.collection {
     width: 100%;
     display: flex;
     flex-direction: row;
     padding: 0 130px 10px 130px;
 }
 
-.collection-text{
+.collection-text {
     width: 35%;
 }
 
-.collection-heading{
+.collection-heading {
     font-size: 50px;
     font-weight: 100;
     color: #F93700;
@@ -117,12 +114,12 @@ main{
     margin-bottom: 30px;
 }
 
-.collection-content{
+.collection-content {
     font-size: 20px;
     color: #7A7F87;
 }
 
-.shop-btn{
+.shop-btn {
     font-size: 20px;
     color: white;
     background-color: #F93700;
@@ -132,7 +129,7 @@ main{
     margin-top: 10px;
 }
 
-.collection-img{
+.collection-img {
     height: 600px;
     width: 1100px;
     background-image: url("./Media/fall-collection.jpg");
@@ -140,7 +137,8 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.services{
+
+.services {
     background-color: #CAC3C3;
     margin: 30px auto;
     width: 86.5%;
@@ -151,25 +149,25 @@ main{
     margin-bottom: 0;
 }
 
-.service-card{
+.service-card {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.service-card-title{
+.service-card-title {
     font-size: 25px;
     margin-bottom: 0;
     color: #484343;
 }
 
-.service-card-text{
+.service-card-text {
     font-size: 23px;
     color: #605B59;
     margin-bottom: 0;
 }
 
-.service-card-wrapper{
+.service-card-wrapper {
     width: 180px;
     height: 180px;
     overflow: hidden;
@@ -178,12 +176,12 @@ main{
     border-radius: 50%;
 }
 
-.service-card-wrapper img{
+.service-card-wrapper img {
     width: 130px;
     height: 130px;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -192,7 +190,7 @@ footer{
     justify-content: space-between;
 }
 
-.about-us{
+.about-us {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -200,20 +198,20 @@ footer{
     gap: 30px;
 }
 
-.about-us-item a{
+.about-us-item a {
     text-decoration: none;
     color: #7F8080;
     font-size: 21px;
 }
 
-.about-us-item:first-child a{
+.about-us-item:first-child a {
     font-size: 30px;
     font-weight: bold;
     position: relative;
     top: -10px;
 }
 
-.contact{
+.contact {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -221,11 +219,11 @@ footer{
     font-size: 21px;
 }
 
-.contact-us{
+.contact-us {
     margin-top: 10px;
 }
 
-.call-btn{
+.call-btn {
     font-size: 21px;
     color: #454D5E;
     background-color: #CAC3C3;
@@ -236,17 +234,17 @@ footer{
     margin-top: 15px;
 }
 
-.work-time{
+.work-time {
     font-weight: 600;
     margin-top: 15px;
 }
 
-.social-icons{
+.social-icons {
     color: #808080;
     font-size: 45px;
     margin-right: 10px;
 }
 
-.social-icons i{
+.social-icons i {
     margin-right: 10px;
 }
