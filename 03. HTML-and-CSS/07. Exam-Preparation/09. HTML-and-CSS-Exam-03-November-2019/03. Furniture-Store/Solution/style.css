@@ -140,3 +140,45 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.services{
+    background-color: #CAC3C3;
+    margin: 30px auto;
+    width: 86.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px 100px;
+    margin-bottom: 0;
+}
+
+.service-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-card-title{
+    font-size: 25px;
+    margin-bottom: 0;
+    color: #484343;
+}
+
+.service-card-text{
+    font-size: 23px;
+    color: #605B59;
+    margin-bottom: 0;
+}
+
+.service-card-wrapper{
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    padding: 25px;
+    background-color: #E6D6D6;
+    border-radius: 50%;
+}
+
+.service-card-wrapper img{
+    width: 130px;
+    height: 130px;
+}
