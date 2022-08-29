@@ -71,3 +71,29 @@ header{
 main{
     background-color: #F0E4E4;
 }
+
+.rooms{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 130px 15px 130px;
+    justify-content: space-between;
+}
+
+.card-img-wrapper{
+    width: 370px;
+    height: 370px;
+    overflow: hidden;
+}
+
+.card-img-wrapper img{
+    width: 370px;
+    height: 370px;
+}
+
+.card-text{
+    font-size: 25px;
+    text-align: center;
+    color: #7A7F87;
+    margin-top: 15px;
+}
