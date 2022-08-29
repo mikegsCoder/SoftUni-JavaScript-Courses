@@ -9,3 +9,65 @@ html {
     box-sizing: inherit;
 }
 
+body{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+
+    width: 1920px;
+    border: 1px solid black;
+}
+
+header{
+    width: 100%;
+    background-color: #F93700;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 60px;
+    align-items: center;
+}
+
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 45px;
+    /* margin-left: 0; */
+    padding-left: 0;
+    font-size: 24px;
+}
+
+.header-nav-item a{
+    color: white;
+    text-decoration: none;
+}
+
+.search input{
+    font-size: 18px;
+    padding: 15px;
+    width: 550px;
+}
+
+.search i{
+    background-color: #B6AFAF;
+    font-size: 17px;
+    padding: 19px 40px;
+    position: relative;
+    left: -4px;
+    /* top: -1px; */
+}
+
+.account{
+    font-size: 24px;
+}
+
+.account a{
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+main{
+    background-color: #F0E4E4;
+}
