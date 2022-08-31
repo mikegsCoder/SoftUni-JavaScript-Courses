@@ -1,0 +1,25 @@
+@media screen and (max-width:768px){
+    /* body{
+        background-color: red;
+    } */
+
+    .gallery{
+        flex-direction: column;
+    }
+
+    .gallery > *{
+        width: 100%;
+    }
+
+    .spotlight{
+        flex-direction: column;
+    }
+
+    .spotlight > *{
+        width: 100%;
+    }
+
+    .spotlight .inner{
+        text-align: center;
+    }
+}
