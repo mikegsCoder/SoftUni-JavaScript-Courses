@@ -1,25 +1,21 @@
-@media screen and (max-width:768px){
-    /* body{
-        background-color: red;
-    } */
-
-    .gallery{
+@media screen and (max-width:768px) {
+    .gallery {
         flex-direction: column;
     }
 
-    .gallery > *{
+    .gallery>* {
         width: 100%;
     }
 
-    .spotlight{
+    .spotlight {
         flex-direction: column;
     }
 
-    .spotlight > *{
+    .spotlight>* {
         width: 100%;
     }
 
-    .spotlight .inner{
+    .spotlight .inner {
         text-align: center;
     }
 }
