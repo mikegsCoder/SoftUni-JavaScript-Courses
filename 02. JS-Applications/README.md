@@ -1,4 +1,4 @@
-## JS Advanced
+## JS Applications
 
 
 ### Course cirriculum :
