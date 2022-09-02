@@ -283,3 +283,28 @@ header{
     margin-left: 5px;
     margin-right: 20px;
 }
+
+.info-top{
+    border: 1px solid blue;
+
+    width: 70%;
+    margin:  30px auto;
+    background-color: #FFA000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 50px;
+    padding-bottom: 35px;
+    color: white;
+}
+
+.info-top hr{
+    background-color: white;
+    width: 450px;
+}
+
+.info-top-text{
+    font-size: 21px;
+    padding-inline: 30px;
+    margin-bottom: 0;
+}
