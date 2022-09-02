@@ -9,23 +9,19 @@ html {
     box-sizing: inherit;
 }
 
-body{
+body {
     font-family: 'Lato', sans-serif;
     margin: 0;
-
     width: 1920px;
     border: 1px solid black;
 }
 
-header{
-    /* border: 1px solid red; */
-
+header {
     width: 100%;
 }
 
-.navbar{
+.navbar {
     width: 100%;
-    /* padding-inline: 200px; */
     background-color: #234465;
     display: flex;
     flex-direction: row;
@@ -33,13 +29,13 @@ header{
     padding: 10px 200px;
 }
 
-.nav-left{
+.nav-left {
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
 
-.header-logo-wrapper{
+.header-logo-wrapper {
     height: 50px;
     width: 150px;
     background-image: url("./images/software-university-logo.svg");
@@ -51,7 +47,7 @@ header{
 
 .apply-btn,
 .enter-btn,
-.wordpress-apply-btn{
+.wordpress-apply-btn {
     font-size: 15px;
     font-weight: bold;
     color: white;
@@ -63,7 +59,7 @@ header{
     margin-top: 5px;
 }
 
-.nav-right{
+.nav-right {
     list-style: none;
     padding-left: 0;
     font-size: 17px;
@@ -74,26 +70,26 @@ header{
     gap: 15px;
 }
 
-.header-list-item a{
+.header-list-item a {
     text-decoration: none;
     color: #92A3B5;
 }
 
-.header-list-item a i{
+.header-list-item a i {
     font-size: 23px;
     margin-inline: 15px;
 }
 
-.enter-btn{
+.enter-btn {
     margin-top: -15px;
 }
 
-.nav-second{
+.nav-second {
     width: 100%;
     padding: 10px 200px;
 }
 
-.nav-second a{
+.nav-second a {
     font-size: 18px;
     font-weight: 700;
     text-decoration: none;
@@ -101,11 +97,11 @@ header{
     color: #CB7B16;
 }
 
-.nav-second a:last-child{
+.nav-second a:last-child {
     color: #1A3F64;
 }
 
-.nav-second a:last-child::after{
+.nav-second a:last-child::after {
     content: '';
     height: 2px;
     width: 260px;
@@ -115,7 +111,7 @@ header{
     top: 128px;
 }
 
-.wordpress{
+.wordpress {
     width: 100%;
     height: 290px;
     display: flex;
@@ -128,7 +124,7 @@ header{
     color: white;
 }
 
-.wordpress-logo-wrapper img{
+.wordpress-logo-wrapper img {
     opacity: 0.6;
     transform: rotate(20deg) scale(1.2);
     position: absolute;
@@ -136,16 +132,14 @@ header{
     top: 330px;
 }
 
-
-
-.site-heading{
+.site-heading {
     font-size: 65px;
     font-weight: bolder;
     margin-top: 40px;
     margin-bottom: 0;
 }
 
-.heading-list{
+.heading-list {
     display: flex;
     list-style: none;
     gap: 30px;
@@ -153,12 +147,11 @@ header{
     padding-left: 0;
 }
 
-.heading-list-item i{
+.heading-list-item i {
     font-size: 30px;
-    /* font-weight: bold; */
 }
 
-.wordpress-apply-btn{
+.wordpress-apply-btn {
     font-size: 21px;
     height: 45px;
     width: 400px;
@@ -166,13 +159,12 @@ header{
 }
 
 .about,
-.skills{
+.skills {
     border: 1px solid red;
 
     width: 63.5%;
     margin: 50px auto;
     background-color: #F2F2F2;
-    /* opacity: 1; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,7 +174,7 @@ header{
     left: 290px;
 }
 
-.about{
+.about {
     top: 420px;
 }
 
@@ -190,7 +182,7 @@ header{
 .skills-heading,
 .topics-heading,
 .info-top-heading,
-.teacher-heading{
+.teacher-heading {
     font-size: 30px;
     margin-top: 20px;
     margin-bottom: 3px;
@@ -200,7 +192,7 @@ header{
 .skills hr,
 .topics hr,
 .info-top hr,
-.teacher hr{
+.teacher hr {
     height: 6px;
     width: 130px;
     background-color: #FFA000;
@@ -208,20 +200,20 @@ header{
     margin-top: 0;
 }
 
-.about-text{
+.about-text {
     font-size: 21px;
 }
-.skills{
-    /* top: 790px; */
+
+.skills {
     top: 820px;
 }
 
-.skills hr{
+.skills hr {
     width: 470px;
 }
 
 .skills-lists,
-.topics-lists{
+.topics-lists {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -229,7 +221,7 @@ header{
 }
 
 .skills-left,
-.skills-right{
+.skills-right {
     list-style: none;
     padding-left: 0;
     font-size: 23px;
@@ -238,19 +230,19 @@ header{
     margin-bottom: 30px;
 }
 
-.skills-item{
+.skills-item {
     margin: 15px;
 }
 
-.skills-item i{
+.skills-item i {
     color: #FFA000;
 }
 
-.topics{
+.topics {
     border: 1px solid blue;
 
     width: 70%;
-    margin:  790px auto 30px auto;
+    margin: 790px auto 30px auto;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
@@ -259,12 +251,12 @@ header{
     padding-bottom: 35px;
 }
 
-.topics hr{
+.topics hr {
     width: 80px;
 }
 
 .topics-left,
-.topics-right{
+.topics-right {
     width: 48.5%;
     list-style: none;
     font-weight: bold;
@@ -272,23 +264,22 @@ header{
     padding-left: 0;
 }
 
-.topic-item{
+.topic-item {
     background-color: #DADADA;
     padding: 10px;
     margin-bottom: 15px;
     border-left: 5px solid #234465;
 }
 
-.topic-item span{
+.topic-item span {
     margin-left: 5px;
     margin-right: 20px;
 }
 
-.info-top{
+.info-top {
     border: 1px solid blue;
-
     width: 70%;
-    margin:  30px auto;
+    margin: 30px auto;
     background-color: #FFA000;
     display: flex;
     flex-direction: column;
@@ -298,122 +289,115 @@ header{
     color: white;
 }
 
-.info-top hr{
+.info-top hr {
     background-color: white;
     width: 450px;
 }
 
-.info-top-text{
+.info-top-text {
     font-size: 21px;
     padding-inline: 30px;
     margin-bottom: 0;
 }
 
-.info-bottom{
+.info-bottom {
     border: 1px solid blue;
-
     width: 70%;
-    margin:  30px auto;
+    margin: 30px auto;
     background-color: #F2F2F2;
     height: 540px;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* padding-bottom: 35px; */
 }
 
-.info-bottom-text{
+.info-bottom-text {
     padding-inline: 50px;
     font-size: 21px;
 }
 
-.info-bottom-text h3{
+.info-bottom-text h3 {
     color: #FFA000;
     margin-bottom: 0;
 }
 
-.info-bottom-text p{
+.info-bottom-text p {
     margin-top: 0;
 }
 
-.info-bottom-text p a{
+.info-bottom-text p a {
     text-decoration: none;
     font-weight: bold;
 }
 
-.info-bottom-additional{
+.info-bottom-additional {
     width: 97%;
     border: 1px solid red;
     margin: 0 auto;
-    /* padding: 15px 20px; */
     color: white;
     font-size: 21px;
     box-shadow: 3px 3px 9px -1px #000000;
 }
 
-.info-bottom-additional h3{
+.info-bottom-additional h3 {
     width: 33%;
     margin-top: 10px;
     margin-left: 20px;
 }
 
-.info-bottom-additional li{
+.info-bottom-additional li {
     margin-bottom: 5px;
 }
 
-.info-bottom-blue{
+.info-bottom-blue {
     background-color: #1A3F64;
     display: flex;
     flex-direction: row;
 }
 
-.info-bottom-orange{
+.info-bottom-orange {
     background-color: #FFA000;
     display: flex;
     flex-direction: row;
 }
 
-.teacher{
+.teacher {
     border: 1px solid blue;
 
     width: 70%;
-    margin:  30px auto;
+    margin: 30px auto;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.teacher-heading{
+.teacher-heading {
     padding-top: 15px;
 }
 
-.teacher hr{
+.teacher hr {
     width: 230px;
 }
 
-.teacher-info{
+.teacher-info {
     width: 100%;
     display: flex;
     flex-direction: row;
     gap: 30px;
     padding: 0 60px;
-    /* vertical-align: middle; */
     align-items: center;
 }
 
-.tescher-text{
+.tescher-text {
     width: 85%;
     font-size: 21px;
     color: #555554;
     padding: 10px 0 50px 0;
 }
 
-.teacher-name{
+.teacher-name {
     color: #1A3F64;
 }
 
-.teacher-img-wrapper{
+.teacher-img-wrapper {
     height: 120px;
     width: 120px;
     overflow: hidden;
@@ -424,12 +408,12 @@ header{
     border-radius: 50%;
 }
 
-.teacher-img-wrapper img{
+.teacher-img-wrapper img {
     height: 120px;
     width: 120px;
 }
 
-.wordpress-apply-btn:last-child{
+.wordpress-apply-btn:last-child {
     position: relative;
     left: 50%;
     transform: translate(-50%);
@@ -437,7 +421,7 @@ header{
     margin-bottom: 60px;
 }
 
-footer{
+footer {
     width: 100%;
     background-color: #162B40;
     color: white;
@@ -448,31 +432,30 @@ footer{
     font-size: 18px;
 }
 
-footer h4{
+footer h4 {
     color: #FFA000;
 }
 
-footer ul{
+footer ul {
     padding-left: 0;
     list-style: none;
 }
 
-footer ul li a{
+footer ul li a {
     color: white;
     text-decoration: none;
 }
 
-footer ul li{
+footer ul li {
     margin-bottom: 10px;
 }
 
-.social-media{
+.social-media {
     width: 350px;
     color: #778490;
-    /* font-size: 18px; */
 }
 
-.social-media-icons i{
+.social-media-icons i {
     font-size: 23px;
     margin: 15px 20px 20px 0;
     color: white;
