@@ -4,7 +4,7 @@ import { editItem, getItemById } from '../api/data.js';
 const editTemplate = (pet, onSubmit) => html`
 <section id="editPage">
     <form @submit=${onSubmit} class="editForm">
-        <img src="./images/editpage-dog.jpg">
+        <img src=${pet.image}>
         <div>
             <h2>Edit PetPal</h2>
             <div class="name">
