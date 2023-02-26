@@ -1,4 +1,4 @@
-# Travel Destinations
+# JS Applications Exam @ SoftUni: Pet Care
 
 🎯  My exam for the [JS Applications](https://softuni.bg/trainings/3589/js-applications-february-2022) course at SoftUni (February 2022). This is a simple Single Page Application where you can add, edit, remove pets or make donations.
 
