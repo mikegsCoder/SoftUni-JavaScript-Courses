@@ -18,7 +18,6 @@
   - delete his own pets;
   - make donations for pets added from other users (only once per pet);
 - Some more features:
-  - implemented Loading Spinner;
   - implemented data validation for Login, Register, Create pet and Edit pet forms;
 
 ## 🧪 Test Accounts
