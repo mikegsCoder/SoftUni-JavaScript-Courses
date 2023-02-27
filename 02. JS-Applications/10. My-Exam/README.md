@@ -42,42 +42,34 @@
  - Populated with data for Pet Care application and deployed on Render.
   <!-- 👉 [Admin Panel](https://examserver.onrender.com/admin/) -->
 
-<!-- ## :framed_picture: Screenshot - Destination Carousel:
+## :framed_picture: Screenshot - Home Page:
 
-![TravelDestinations-AllDestinations](https://travel-destinations-88814.firebaseapp.com/images/screenshots/DestinationCarousel.jpg)
+![PetCare-Home](https://mikegscoder.github.io/exams/petCare/images/screenShots/Home.jpg)
 
-## :framed_picture: Screenshot - Destination Details:
+## :framed_picture: Screenshot - Dashboard Page:
 
-![TravelDestinations-DestinationDetails](https://travel-destinations-88814.firebaseapp.com/images/screenshots/DestinationDetails.jpg)
+![PetCare-Dashboard](https://mikegscoder.github.io/exams/petCare/images/screenShots/Dashboard.jpg)
 
-## :framed_picture: Screenshot - Destination Geolocation:
+## :framed_picture: Screenshot - Login Page:
 
-![TravelDestinations-DestinationLocation](https://travel-destinations-88814.firebaseapp.com/images/screenshots/DestinationLocation.jpg)
+![PetCare-Login](https://mikegscoder.github.io/exams/petCare/images/screenShots/Login.jpg)
 
-## :framed_picture: Screenshot - Register with Data Validation:
+## :framed_picture: Screenshot - Register Page:
 
-![TravelDestinations-Register](https://travel-destinations-88814.firebaseapp.com/images/screenshots/Register.jpg)
+![PetCare-Register](https://mikegscoder.github.io/exams/petCare/images/screenShots/Register.jpg)
 
-## :framed_picture: Screenshot - Create Destination with Data Validation:
+## :framed_picture: Screenshot - Details Page:
 
-![TravelDestinations-CreateDestination](https://travel-destinations-88814.firebaseapp.com/images/screenshots/CreateDestination.jpg)
+![PetCare-Details](https://mikegscoder.github.io/exams/petCare/images/screenShots/Details.jpg)
 
-## :framed_picture: Screenshot - Comments List Paginated:
+## :framed_picture: Screenshot - Create Page:
 
-![TravelDestinations-CommentsList](https://travel-destinations-88814.firebaseapp.com/images/screenshots/CommentsList.jpg)
+![PetCare-Create](https://mikegscoder.github.io/exams/petCare/images/screenShots/Create.jpg)
 
-## :framed_picture: Screenshot - User Profile Statistics:
+## :framed_picture: Screenshot - Edit Page:
 
-![TravelDestinations-UserProfileStatistics](https://travel-destinations-88814.firebaseapp.com/images/screenshots/UserProfileStatistics.jpg)
+![PetCare-Edit](https://mikegscoder.github.io/exams/petCare/images/screenShots/Edit.jpg)
 
-## :framed_picture: Screenshot - 404 (Not Found):
-
-![TravelDestinations-NotFound](https://travel-destinations-88814.firebaseapp.com/images/screenshots/404.jpg)
-
-## :v: Leave a feedback
+<!-- ## :v: Leave a feedback
 Give a :star: if you like this app.
-Thank you ❤️!
-
-## 📖 License:
-
-This project is licensed under the [MIT License](LICENSE). -->
+Thank you ❤️! -->
