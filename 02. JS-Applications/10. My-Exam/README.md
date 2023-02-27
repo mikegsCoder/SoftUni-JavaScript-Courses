@@ -37,9 +37,10 @@
 
 ## :gear: Application Backend:
 
- - [SoftUni practice server](https://github.com/softuni-practice-server/softuni-practice-server) 
+ - [SoftUni practice server](https://github.com/softuni-practice-server/softuni-practice-server)
  - Developed by [Viktor Kostadinov](https://github.com/viktorpts)
- <!-- - Populated with data for Pet Care application and deployed on Render 👉 [Admin Panel](https://examserver.onrender.com/admin/) -->
+ - Populated with data for Pet Care application and deployed on Render.
+  <!-- 👉 [Admin Panel](https://examserver.onrender.com/admin/) -->
 
 <!-- ## :framed_picture: Screenshot - Destination Carousel:
 
